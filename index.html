@@ -10,6 +10,7 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="is-preload">
@@ -21,7 +22,7 @@
 					<header id="header" class="alt">
 						<span class="logo"><img src="images/logo.svg" alt="" /></span>
 						<h1>PHP Coach</h1>
-						<p>The 1 day PHP course that will change your mind<br />
+						<p>The 2 days PHP course that will change your mind<br />
 						built by <a href="https://twitter.com/mmoreram">Marc Morera</a> for all of you.</p>
 					</header>
 
@@ -47,8 +48,9 @@
 											<h2>Meet the course</h2>
 										</header>
 										<p>
-											Are you willing to create light, extremely fast and reusable microservices in PHP? Have you seen tons of theory but your lema
-											has always been "show me the code"? Then this course is crafted for you.
+											Are you willing to create light, extremely fast and reusable microservices in <strong>PHP</strong>? Have you seen tons of theory but your lema
+											has always been "show me the code"? Then this course is crafted for you.<br>
+											During these 2 days, you will be able to understant the basics of <strong>CQRS</strong>
 
 										</p>
 										<ul class="actions">
@@ -76,6 +78,15 @@
 								margin-top: 0;
 							}
 
+							.icon2 {
+								font-size: 75pt;
+								border-color: #dddddd;
+								display: inline-block;
+								margin: 0 0 1em 0;
+								border-radius: 100%;
+								color: #efa8b0;
+							}
+
 						</style>
 
 						<!-- First Section -->
@@ -85,7 +96,7 @@
 								</header>
 								<ul class="features">
 									<li>
-										<span class="icon solid major style1 fa-symfony"></span>
+										<span class="icon2 solid major style1 fab fa-symfony"></span>
 										<h3>Project skeleton</h3>
 										<p>Work always with a base skeleton. This skeleton will never contain business logic, but all what you'll need to deploy the project anywhere</p>
 										<ul>
@@ -97,27 +108,30 @@
 										</ul>
 									</li>
 									<li>
-										<span class="icon solid major style1 fa-docker"></span>
-										<h3>Docker basics</h3>
-										<p>We will learn all the needed docker skills you need to deploy your application.</p>
+										<span class="icon2 solid major style1 fab fa-docker"></span>
+										<h3>Docker microservice basics</h3>
+										<p>
+											We will learn all the needed docker skills you need to deploy your application. The course assumes that you already know what docker is
+											and why we use it
+										</p>
 										<ul>
-											<li>Docker basic features</li>
-											<li>Docker composer</li>
+											<li>Docker needed blocks</li>
+											<li>Docker composer for testing</li>
 											<li>Creating a base Dockerfile</li>
 										</ul>
 									</li>
 									<li>
-										<span class="icon major style3 fa-envelope-open-text"></span>
+										<span class="icon2 major style3 fa fa-server"></span>
 										<h3>ReactPHP Server</h3>
 										<p>Our project will run with ReactPHP as a Server. That will bring us deploy simplicity and an insane performance improvement.</p>
 										<ul>
-											<li>Check the PHP-PM project</li>
-											<li>Check the ReactPHP Symfony server</li>
+											<li>The PHP-PM project</li>
+											<li>The ReactPHP Symfony server</li>
 											<li>Discussion and server installation</li>
 										</ul>
 									</li>
 									<li>
-										<span class="icon major style5 fa-project-diagram"></span>
+										<span class="icon2 major style5 fa fa-project-diagram"></span>
 										<h3>Define your domain</h3>
 										<p>
 											Always with a simple but complete project in front of us, we will start looking at our model. In this part we will not load any external
@@ -132,39 +146,34 @@
 										</ul>
 									</li>
 									<li>
-										<span class="icon major style5 fa-arrow-alt-circle-right"></span>
+										<span class="icon2 major style5 fa fa-layer-group"></span>
 										<h3>Dig into I/O dependencies</h3>
 										<p>
-											Once our project is properly working, then let's add our persistence layers, like Redis or Mysql. We will see that adding tests coverage
+											Once our project is properly working, then we'll add the persistence layers, like Redis or Mysql. We will see that adding tests coverage
 											to these classes is extremely trivial and fast. We will see how easy is to change from one adapter to another.
 										</p>
 										<ul>
 											<li>Redis adapter for our cache layer</li>
 											<li>Mysql adapter for our persistence layer</li>
 											<li>I/O repositories interfaces and in-memory implementation</li>
-											<li>Full testing of our needs, both unit and functional</li>
+											<li>Unit testing of new adapters</li>
 										</ul>
 									</li>
 									<li>
-										<span class="icon major style5 fa-layer-group"></span>
+										<span class="icon2 major style5 fa fa-sync"></span>
 										<h3>Dig into asynchronous feature</h3>
 										<p>
 											Using asynchronous console consumers will help you to split, literally, between write and read operations. Even across different infrastructure
-											members. We will turn our application asynchronous, adding test coverage and some tips and tricks.
+											elements. We will turn our application asynchronous, adding test coverage and some tips and tricks.
 										</p>
 										<ul>
 											<li>Adding asynchronous middleware for our write operations</li>
 											<li>RabbitMQ adapter</li>
-											<li>Adding testing coverage for our asynchronous writes</li>
-											<li></li>
+											<li>Adding functional testing coverage for our asynchronous writes</li>
+											<li>Adapt docker to work with queues</li>
 										</ul>
 									</li>
 								</ul>
-								<footer class="major">
-									<ul class="actions special">
-										<li><a href="generic.html" class="button">Learn More</a></li>
-									</ul>
-								</footer>
 							</section>
 
 						<!-- Second Section -->
