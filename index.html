@@ -20,18 +20,19 @@
 				<!-- Header -->
 					<header id="header" class="alt">
 						<span class="logo"><img src="images/logo.svg" alt="" /></span>
-						<h1>Stellar</h1>
-						<p>Just another free, fully responsive site template<br />
-						built by <a href="https://twitter.com/ajlkn">@ajlkn</a> for <a href="https://html5up.net">HTML5 UP</a>.</p>
+						<h1>PHP Coach</h1>
+						<p>The 1 day PHP course that will change your mind<br />
+						built by <a href="https://twitter.com/mmoreram">Marc Morera</a> for all of you.</p>
 					</header>
 
 				<!-- Nav -->
 					<nav id="nav">
 						<ul>
-							<li><a href="#intro" class="active">Introduction</a></li>
-							<li><a href="#first">First Section</a></li>
-							<li><a href="#second">Second Section</a></li>
-							<li><a href="#cta">Get Started</a></li>
+							<li><a href="#meet" class="active">Meet the course</a></li>
+							<li><a href="#agenda">Course Agenda</a></li>
+							<li><a href="#price">Price</a></li>
+							<li><a href="#sessions">Next sessions</a></li>
+							<li><a href="#contact">Contact Us</a></li>
 						</ul>
 					</nav>
 
@@ -39,15 +40,17 @@
 					<div id="main">
 
 						<!-- Introduction -->
-							<section id="intro" class="main">
+							<section id="meet" class="main">
 								<div class="spotlight">
 									<div class="content">
 										<header class="major">
-											<h2>Ipsum sed adipiscing</h2>
+											<h2>Meet the course</h2>
 										</header>
-										<p>Sed lorem ipsum dolor sit amet nullam consequat feugiat consequat magna
-										adipiscing magna etiam amet veroeros. Lorem ipsum dolor tempus sit cursus.
-										Tempus nisl et nullam lorem ipsum dolor sit amet aliquam.</p>
+										<p>
+											Are you willing to create light, extremely fast and reusable microservices in PHP? Have you seen tons of theory but your lema
+											has always been "show me the code"? Then this course is crafted for you.
+
+										</p>
 										<ul class="actions">
 											<li><a href="generic.html" class="button">Learn More</a></li>
 										</ul>
@@ -56,26 +59,105 @@
 								</div>
 							</section>
 
+						<style>
+							#agenda .features p {
+								text-align: left;
+								font-size: 14pt;
+							}
+
+							#agenda .features ul {
+								padding-left: 0;
+							}
+
+							#agenda .features ul li {
+								width: 100%;
+								text-align: left;
+								font-size: 14pt;
+								margin-top: 0;
+							}
+
+						</style>
+
 						<!-- First Section -->
-							<section id="first" class="main special">
+							<section id="agenda" class="main special">
 								<header class="major">
-									<h2>Magna veroeros</h2>
+									<h2>Course Agenda</h2>
 								</header>
 								<ul class="features">
 									<li>
 										<span class="icon solid major style1 fa-code"></span>
-										<h3>Ipsum consequat</h3>
-										<p>Sed lorem amet ipsum dolor et amet nullam consequat a feugiat consequat tempus veroeros sed consequat.</p>
+										<h3>Project skeleton</h3>
+										<p>Work always with a base skeleton. This skeleton will never contain business logic, but all what you'll need to deploy the project anywhere</p>
+										<ul>
+											<li>Layers definition</li>
+											<li>Install Symfony4. The framework will work, only, as an entry point</li>
+											<li>Install dependencies. Composer to the rescue</li>
+											<li>Command Bus as the core member of the project</li>
+											<li>Commands, command handlers and middleware classes</li>
+										</ul>
+									</li>
+									<li>
+										<span class="icon solid major style1 fa-code"></span>
+										<h3>Docker basics</h3>
+										<p>We will learn all the needed docker skills you need to deploy your application.</p>
+										<ul>
+											<li>Docker basic features</li>
+											<li>Docker composer</li>
+											<li>Creating a base Dockerfile</li>
+										</ul>
 									</li>
 									<li>
 										<span class="icon major style3 fa-copy"></span>
-										<h3>Amed sed feugiat</h3>
-										<p>Sed lorem amet ipsum dolor et amet nullam consequat a feugiat consequat tempus veroeros sed consequat.</p>
+										<h3>Understand the ReactPHP Server</h3>
+										<p>Our project will run with ReactPHP as a Server. That will bring us deploy simplicity and an insane performance improvement.</p>
+										<ul>
+											<li>Check the PHP-PM project</li>
+											<li>Check the ReactPHP Symfony server</li>
+											<li>Discussion and server installation</li>
+										</ul>
 									</li>
 									<li>
 										<span class="icon major style5 fa-gem"></span>
-										<h3>Dolor nullam</h3>
-										<p>Sed lorem amet ipsum dolor et amet nullam consequat a feugiat consequat tempus veroeros sed consequat.</p>
+										<h3>Define your domain</h3>
+										<p>
+											Always with a simple but complete project in front of us, we will start looking at our model. In this part we will not load any external
+										   	dependency like Redis or Mysql. Only our own classes. After this module, our project will be working properly without any persistence layer
+											and completely synchronous.
+										</p>
+										<ul>
+											<li>Needs analysis</li>
+											<li>Model classes implementation</li>
+											<li>I/O repositories interfaces and in-memory implementation</li>
+											<li>Full testing of our needs, both unit and functional</li>
+										</ul>
+									</li>
+									<li>
+										<span class="icon major style5 fa-gem"></span>
+										<h3>Dig into I/O dependencies</h3>
+										<p>
+											Once our project is properly working, then let's add our persistence layers, like Redis or Mysql. We will see that adding tests coverage
+											to these classes is extremely trivial and fast. We will see how easy is to change from one adapter to another.
+										</p>
+										<ul>
+											<li>Redis adapter for our cache layer</li>
+											<li>Mysql adapter for our persistence layer</li>
+											<li>I/O repositories interfaces and in-memory implementation</li>
+											<li>Full testing of our needs, both unit and functional</li>
+										</ul>
+									</li>
+									<li>
+										<span class="icon major style5 fa-gem"></span>
+										<h3>Dig into asynchronous feature</h3>
+										<p>
+											Using asynchronous console consumers will help you to split, literally, between write and read operations. Even across different infrastructure
+											members. We will turn our application asynchronous, adding test coverage and some tips and tricks.
+										</p>
+										<ul>
+											<li>Adding asynchronous middleware for our write operations</li>
+											<li>RabbitMQ adapter</li>
+											<li>Adding testing coverage for our asynchronous writes</li>
+											<li></li>
+										</ul>
 									</li>
 								</ul>
 								<footer class="major">
