@@ -54,6 +54,10 @@
 				color: #666;
 			}
 
+			#main input[type="text"], #main input[type="email"], #main textarea {
+				border-color: #BBB;
+			}
+
 		</style>
 	</head>
 	<body class="is-preload">
@@ -75,6 +79,7 @@
 							<li><a href="#agenda">Course Agenda</a></li>
 							<li><a href="#sessions">Next sessions</a></li>
 							<li><a href="#companies">Companies training</a></li>
+							<li><a href="#special">Special</a></li>
 							<li><a href="#contact" class="primary">Contact Us</a></li>
 						</ul>
 					</nav>
@@ -92,12 +97,12 @@
 										<p>
 											Are you willing to create light, extremely fast and reusable microservices in <strong>PHP</strong>? Have you seen tons of theory but your lema
 											has always been "show me the code"? Then this course is crafted for you.<br>
-											During these 2 days, you will be able to understand the basics of <strong>CQRS</strong>, how can you use it when development an <strong>asynchronous
-											microservice</strong> and how to deploy all your service in a very simple way.
+											During these 2 days, you will be able to understand the basics of <strong>CQRS</strong>, how can you use it in an <strong>asynchronous
+											microservice</strong> development and how to deploy it in a very simple way.
 										</p>
 										<p>
 											We will start from the scratch, as the occasion deserves. After 2 intensive days, you will be able to design, implement and deploy incredible
-											microservices in PHP7 and Symfony4, returning in <strong>less than 5ms</strong> per request and with a performance you've never seen before.
+											microservices in PHP7 and Symfony4, returning requests in <strong>less than 5ms</strong> per request and with a performance you've never seen before.
 										</p>
 										<p>
 											That's my commitment with you.
@@ -148,7 +153,7 @@
 											<li>The PHP-PM project</li>
 											<li>The ReactPHP Symfony server</li>
 											<li>Discussion and server installation</li>
-											<li>Our hello world</li>
+											<li>Our own hello world</li>
 										</ul>
 									</li>
 									<li>
@@ -176,7 +181,6 @@
 										<ul>
 											<li>Redis adapter for our cache layer</li>
 											<li>Mysql adapter for our persistence layer</li>
-											<li>I/O repositories interfaces and in-memory implementation</li>
 											<li>Unit testing of new adapters</li>
 										</ul>
 									</li>
@@ -203,9 +207,10 @@
 								<header class="major">
 									<h2>Next sessions</h2>
 									<p style="font-size: 16pt;">
-										Check the next available sessions. Until 5 days before the chosen date, the course can be suspended if there are less
-										than 10 attendees. In that case, all costs will be refunded automatically. In case your city is not listed here, you can <a href="#contact">
-										<strong>contact us</strong> and we will try to join more people to make it happen.</a>
+										Check the next available sessions.<br>
+										Until 5 days before the chosen date, the course can be suspended if there are less than 10 attendees.<br>
+										In that case, all costs will be refunded automatically.<br>
+										In case your city is not listed here, you can <a href="#contact"><strong>contact us</strong></a> and we will try to join more people to make it happen.
 									</p>
 								</header>
 								<div class="table-wrapper">
@@ -274,7 +279,7 @@
 							<section id="contact" class="main special">
 
 								<header class="major">
-									<h2>Stay tuned!</h2>
+									<h2>Contact us!</h2>
 									<p style="font-size: 16pt;">
 										As soon we have some interested people in a city, we will add a date there and will spread the word.<br>
 										If you're interested in the course, we encourage you to add your information and your city.<br>
@@ -289,15 +294,19 @@
 													</div>
 
 													<div class="col-6 col-12-xsmall">
-														<input style="" type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+														<input style="" type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="Email address" required>
 													</div>
 
 													<div class="col-6 col-12-xsmall">
-														<input style="" type="email" value="" name="CITY" class="email" id="mce-CITY" placeholder="city" required>
+														<input style="" type="text" value="" name="CITY" class="email" id="mce-CITY" placeholder="City" required>
 													</div>
 
 													<div class="col-6 col-12-xsmall">
-														<input style="" type="email" value="" name="COUNTRY" class="email" id="mce-COUNTRY" placeholder="country" required>
+														<input style="" type="text" value="" name="COUNTRY" class="email" id="mce-COUNTRY" placeholder="Country" required>
+													</div>
+
+													<div class="col-12 float-left">
+														<textarea name="COMMENT" class="email" id="mce-COMMENT" placeholder="Comments"></textarea>
 													</div>
 
 													<div class="col-12 float-left">
