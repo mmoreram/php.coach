@@ -1,0 +1,351 @@
+<!DOCTYPE HTML>
+<!--
+	Stellar by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+<head>
+    <title>PHP Coach - Microservices Course</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, user-scalable=no"/>
+    <link rel="stylesheet" href="assets/css/main.css"/>
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css"/>
+    <link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css"
+          rel="stylesheet" type="text/css">
+    <noscript>
+        <link rel="stylesheet" href="assets/css/noscript.css"/>
+    </noscript>
+
+    <style type="text/css">
+        #mc_embed_signup {
+            background: #fff;
+            clear: left;
+            font: 14px Helvetica, Arial, sans-serif;
+            width: 100%;
+        }
+    </style>
+
+    <style type="text/css">
+        #agenda .features p {
+            text-align: left;
+        }
+
+        #agenda .features ul {
+            padding-left: 0;
+        }
+
+        #agenda .features ul li {
+            width: 95%;
+            text-align: left;
+            margin-top: 0;
+        }
+
+        .icon2 {
+            font-size: 75pt;
+            border-color: #dddddd;
+            display: inline-block;
+            margin: 0 0 1em 0;
+            border-radius: 100%;
+            color: #efa8b0;
+        }
+
+        .price i {
+            color: #666;
+        }
+
+        .lang {
+            color: #666;
+        }
+
+        #main input[type="text"], #main input[type="email"], #main textarea {
+            border-color: #BBB;
+        }
+
+        .place {
+            color: darkblue;
+        }
+
+        .icon-small {
+            font-size: inherit;
+        }
+
+        #nav .icon-small {
+            color: #CCC;
+        }
+
+        #nav ul li a {
+            padding: 0 0.25em;
+        }
+
+        #nav a.active .icon-small {
+            color: #efa8b0;
+        }
+
+        .icon2 {
+            margin-right: 10px;
+        }
+
+    </style>
+</head>
+<body class="is-preload">
+
+<!-- Wrapper -->
+<div id="wrapper">
+
+    <!-- Header -->
+    <header id="header" class="alt">
+        <span class="logo"><img src="images/logo.svg" alt=""/></span>
+        <h1>PHP Coach - Microservices Course</h1>
+        <p>Start building insane PHP microservices with this 2 days course,<br/>
+            crafted by <a href="https://twitter.com/mmoreram">Marc Morera</a>
+        </p>
+    </header>
+
+    <!-- Nav -->
+    <nav id="nav">
+        <ul>
+            <li><a href="#project-skeleton"><span class="icon2 icon-small solid style1 fa fa-skull"></span>Skeleton</a></li>
+            <li><a href="#docker-basics"><span class="icon2 icon-small solid style1 fab fa-docker"></span>Docker basics</a></li>
+            <li><a href="#reactphp-server"><span class="icon2 icon-small solid style1 fa fa-server"></span>ReactPHP Server</a></li>
+            <li><a href="#your-domain"><span class="icon2 icon-small solid style1 fa fa-project-diagram"></span>Domain Definition</a></li>
+            <li><a href="#io-dependencies"><span class="icon2 icon-small solid style1 fa fa-layer-group"></span>I/O Dependencies</a></li>
+            <li><a href="#asynchronous"><span class="icon2 icon-small solid style1 fa fa-sync"></span>Turning asynchronous</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main -->
+    <div id="main">
+
+        <section id="project-skeleton" class="main">
+            <h2><span class="icon2 icon-small solid style1 fa fa-skull"></span> Skeleton - 3h</h2>
+            <p>As easy as it sounds, but most of the times, one of the most
+                difficult part of any application. In this first chapter of the
+                project, we will build what will be our basis project. What do
+                you need to start from the scratch a new project where you will
+                code your business logic on top of CQRS architecture design and
+                by using, maybe in the future, asynchronous and non-blocking
+                classes? What are the basic package you <strong>really</strong>
+                need in your project in order to start with the thinnest project
+                in your sandbox?
+            </p>
+
+            <p>This chapter will explore the foundations of all the project, not
+                only in the theoretical part, with good practices, but in a
+                practical way
+            </p>
+
+            <ul>
+                <li>Layers definition</li>
+                <li>Install Symfony4. The framework will work, only, as an entry point </li>
+                <li>Command Bus as the core member of the project</li>
+                <li>Commands, command handlers and middleware classes</li>
+                <li>Our first hello world on top of CQRS</li>
+                <li>Server support with Nginx + PHP-FPM</li>
+                <li>Some benchmarking with AB</li>
+            </ul>
+        </section>
+
+
+        <section id="docker-basics" class="main">
+            <h2><span class="icon2 icon-small solid style1 fab fa-docker"></span> Docker basics - 3h</h2>
+            <p>Nowadays, one the best way of making your application available
+                for almost every developer and every modern deploy system is
+                by adding docker support. Docker is quite easy if you understand
+                its bases and purpose, and that will be our goal. Once we have
+                a nice skeleton for our new hello world application, we will
+                setup both the docker and docker-compose support, for
+                delivering, testing and developing
+            </p>
+
+            <p>The goal of this chapter will be adding both a basic development
+                and testing support for our application. We will add some
+                CircleCI support to add a hook for our pull requests
+            </p>
+
+            <ul>
+                <li>Docker needed blocks</li>
+                <li>Docker composer for testing</li>
+                <li>Creating a base Dockerfile</li>
+                <li>Our first priceless `assertTrue(true)` test</li>
+                <li>Make everything run inside CircleCI</li>
+            </ul>
+        </section>
+
+
+        <section id="reactphp-server" class="main">
+            <h2><span class="icon2 icon-small solid style1 fa fa-server"></span> ReactPHP Server - 2h</h2>
+            <p>How fast can a server deliver your service endpoints? Is the
+                traditional server tools like Nginx or Apache the most optimal
+                way of serving PHP microservices, or we can really find new ways
+                of improving even more our work?
+            </p>
+            <p>
+                This may be one of the most asked questions in the web
+                developers world of all times. And we have some stuff here to
+                talk about, mostly because seems that things can even go faster,
+                and <strong>FASTER</strong> by using some other techniques, like
+                using projects like PHP-PM or by using a little bit more our
+                friend ReactPHP.
+            </p>
+
+            <p>
+                The goal of this chapter will be making a small trip from
+                available PHP servers, going from our already
+                working-on-production Nginx with PHP-PM, to the brand new
+                one-thread and blocking ReactPHP server.
+            </p>
+
+            <ul>
+                <li>First sight at PHP-PM</li>
+                <li>First sight at ReactPHP server</li>
+                <li>Benchmarking & discussion</li>
+            </ul>
+        </section>
+
+
+        <section id="your-domain" class="main">
+            <h2><span class="icon2 icon-small solid style1 fa fa-project-diagram"></span> Domain definition - 3h</h2>
+            <p>
+                Now we have a small service that runs as faster as it can run,
+                but we only have a small hello world endpoint, and would be
+                difficult for us to make som money just with this feature, so
+                let's start with our domain.
+            </p>
+            <p>
+                And our project will be simple. We will craft a small
+                microservice to take care about users. Not about a login system,
+                nor a complex user management, but a simple and small user API,
+                ready to:
+            </p>
+            <ul>
+                <li>Add a new User</li>
+                <li>Delete an existing User</li>
+                <li>Edit an existing User</li>
+                <li>List all users</li>
+            </ul>
+            <p>
+                That will be enough to start understanding some small things
+                around architecture, like where to place our domain classes,
+                what these classes should have and what should completely avoid,
+                and how big this model can really be before start thinking of
+                making a logical split.
+            </p>
+
+            <p>
+                After this chapter, everything should be working properly, in a
+                synchronous way, and by saving absolutely everything in memory,
+                what, even working as expected, wont be useful at all. But hey!
+                is our first step :)
+            </p>
+
+            <ul>
+                <li>Needs analysis</li>
+                <li>Model classes implementation</li>
+                <li>I/O repositories interfaces and in-memory implementation </li>
+                <li>Full testing of our needs, both unit and functional</li>
+            </ul>
+        </section>
+
+
+        <section id="io-dependencies" class="main">
+            <h2><span class="icon2 icon-small solid style1 fa fa-layer-group"></span> I/O dependencies - 3h</h2>
+            <p>
+                So let's make it work properly by adding an extra layer in our
+                project related to I/O operations. In our language, adding some
+                repository implementations, like the User storage one, or the
+                Redis one for our cache.
+            </p>
+
+            <p>
+                All additions will have to be 100% covered by functional tests.
+                We will see how trivial is, after all, and only if we make the
+                right steps, to make all this happen properly and green tested.
+            </p>
+
+            <p>
+                After this chapter, the application will turn properly usable
+            </p>
+
+            <ul>
+                <li>Redis adapter for our cache layer</li>
+                <li>Mysql adapter for our persistence layer</li>
+                <li>Unit testing of new adapters</li>
+                <li>Docker adaptation to make tests still work on CircleCI</li>
+            </ul>
+        </section>
+
+
+        <section id="asynchronous" class="main">
+            <h2><span class="icon2 icon-small solid style1 fa fa-sync"></span> Turning asynchronous - 2h</h2>
+            <p>
+                This is the last, and not less important step. How can we turn
+                everything a little bit better by turning our writes
+                asynchronous? Can we really postpone some actions like adding a
+                new User, and persist this action once the server is more
+                capable?
+            </p>
+
+            <p>
+                When you craft a new microservice, one of the things you should
+                take in account is that, eventually, you could have tons of
+                requests. All reads must be synchronous, of course, but what
+                happen with writes? Do they have to be synchronous? Can we add
+                some queues behind the service and consume all these actions in
+                parallel, taking some work from the server? That would make
+                reads a little bit faster, right?
+            </p>
+
+            <p>
+                We will use RabbitMQ for this purpose, adding some classes in
+                our CQRS implementation in a way that will blow your mind.
+            </p>
+
+            <p>
+                After this chapter, you will have a Symfony4 based PHP
+                application on top of a ReactPHP server, CQRS as our main
+                architectural pattern and some basics from what is known as
+                SOLID. Small classes, small features and a really nice-to-work
+                repository.
+
+                That's the deal.
+            </p>
+
+            <ul>
+                <li>Adding asynchronous middleware for our write operations </li>
+                <li>RabbitMQ adapter</li>
+                <li>Adding functional testing coverage for our asynchronous writes</li>
+                <li>Turn Docker queues friendly</li>
+            </ul>
+        </section>
+    </div>
+
+</div>
+
+<!-- Scripts -->
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/jquery.scrollex.min.js"></script>
+<script src="assets/js/jquery.scrolly.min.js"></script>
+<script src="assets/js/browser.min.js"></script>
+<script src="assets/js/breakpoints.min.js"></script>
+<script src="assets/js/util.js"></script>
+<script src="assets/js/main.js"></script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async
+        src="https://www.googletagmanager.com/gtag/js?id=UA-41917921-6"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-41917921-6');
+</script>
+
+
+</body>
+</html>
