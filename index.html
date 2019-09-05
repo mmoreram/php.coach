@@ -86,507 +86,510 @@
     </header>
     <!-- ***** Header Area End ***** -->
 
-    <!-- ***** Welcome Area Start ***** -->
-    <section class="welcome-area bg-overlay" style="background-image: url(img/pattern.png); background-repeat: repeat" id="home">
-        <div class="container h-100">
-            <div class="row h-100 align-items-center">
-                <div class="col-12">
-                    <!-- Welcome Content -->
-                    <div class="welcome-content text-center wow fadeInUp" data-wow-delay="300ms">
-                        <h5>Current Available Course</h5>
-                        <h2>Microservices in PHP Course</h2>
-                        <p>Start building insane PHP microservices with this 2 days course.</p>
-                        <a href="#course-agenda" class="btn dornee-btn mt-30" target="_blank">View course</a>
+    <div class="page-content">
+        <!-- ***** Welcome Area Start ***** -->
+        <section class="welcome-area bg-overlay" style="background-image: url(img/pattern.png); background-repeat: repeat" id="home">
+            <div class="container h-100">
+                <div class="row h-100 align-items-center">
+                    <div class="col-12">
+                        <!-- Welcome Content -->
+                        <div class="welcome-content text-center wow fadeInUp" data-wow-delay="300ms">
+                            <h5>Current Available Course</h5>
+                            <h2>Microservices in PHP Course</h2>
+                            <p>Start building insane PHP microservices with this 2 days course.</p>
+                            <a href="#course-agenda" class="btn dornee-btn mt-30" target="_blank">View course</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Down Icon -->
+            <div class="down-icon wow fadeInUp" data-wow-delay="300ms" id="scrollDown">
+                <a href="#"><i class="arrow_down"></i></a>
+            </div>
+        </section>
+        <!-- ***** Welcome Area End ***** -->
+
+        <!-- ***** Service Area Start ***** -->
+        <section class="my-service-area bg-gray section-padding-100-70 clearfix" id="course-agenda">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <!-- Section Title -->
+                        <div class="section-title text-center wow fadeInUp" data-wow-delay="300ms">
+                            <h2>Course Agenda</h2>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <!-- Service Content Area -->
+                    <div class="col-12 col-sm-6 col-lg-4">
+                        <a href="course.html#skeleton" >
+                            <div class="service-content-area text-center mb-30 wow fadeInUp" data-wow-delay="300ms">
+                                <!-- Icon -->
+                                <div class="service-icon">
+                                    <i class="fa fa-skull"></i>
+                                </div>
+                                <!-- Content text -->
+                                <div class="service-content-text">
+                                    <h4>Project skeleton</h4>
+                                    <p>Work always with a base skeleton. This skeleton will never contain business logic, but all what you'll need to deploy the project anywhere</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- Service Content Area -->
+                    <div class="col-12 col-sm-6 col-lg-4">
+                        <a href="course.html#docker-basics">
+                            <div class="service-content-area text-center mb-30 wow fadeInUp" data-wow-delay="300ms">
+                                <!-- Icon -->
+                                <div class="service-icon">
+                                    <i class="fab fa-docker"></i>
+                                </div>
+                                <!-- Content text -->
+                                <div class="service-content-text">
+                                    <h4>Docker basics</h4>
+                                    <p>We will learn all the needed docker skills you need to deploy your application. The course assumes that you already know what docker is and why we use it </p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- Service Content Area -->
+                    <div class="col-12 col-sm-6 col-lg-4">
+                        <a href="course.html#reactphp-server">
+                            <div class="service-content-area text-center mb-30 wow fadeInUp" data-wow-delay="300ms">
+                                <!-- Icon -->
+                                <div class="service-icon">
+                                    <i class="fa fa-server"></i>
+                                </div>
+                                <!-- Content text -->
+                                <div class="service-content-text">
+                                    <h4>ReactPHP Server</h4>
+                                    <p>Our project will run with ReactPHP as a Server. That will bring us deploy simplicity and an insane performance improvement.</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- Service Content Area -->
+                    <div class="col-12 col-sm-6 col-lg-4">
+                        <a href="course.html#domain-definition">
+                            <div class="service-content-area text-center mb-30 wow fadeInUp" data-wow-delay="300ms">
+                                <!-- Icon -->
+                                <div class="service-icon">
+                                    <i class="fa fa-project-diagram"></i>
+                                </div>
+                                <!-- Content text -->
+                                <div class="service-content-text">
+                                    <h4>Domain definition</h4>
+                                    <p>
+                                        Always with a simple but complete project in front of us, we will start looking at our model. In this part we will not load any external dependency like Redis or Mysql. Only our own classes. After this module, our project will be working properly without any persistence layer and completely synchronous.
+
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- Service Content Area -->
+                    <div class="col-12 col-sm-6 col-lg-4">
+                        <a href="course.html#io-dependencies">
+                            <div class="service-content-area text-center mb-30 wow fadeInUp" data-wow-delay="300ms">
+                                <!-- Icon -->
+                                <div class="service-icon">
+                                    <i class="fa fa-layer-group"></i>
+                                </div>
+                                <!-- Content text -->
+                                <div class="service-content-text">
+                                    <h4>I/O dependencies</h4>
+                                    <p>Once our project is properly working, then we'll add the persistence layers, like Redis or Mysql. We will see that adding tests coverage to these classes is extremely trivial and fast. We will see how easy is to change from one adapter to another. </p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- Service Content Area -->
+                    <div class="col-12 col-sm-6 col-lg-4">
+                        <a href="course.html#turning-asynchronous">
+                            <div class="service-content-area text-center mb-30 wow fadeInUp" data-wow-delay="300ms">
+                                <!-- Icon -->
+                                <div class="service-icon">
+                                    <i class="fa fa-refresh"></i>
+                                </div>
+                                <!-- Content text -->
+                                <div class="service-content-text">
+                                    <h4>Turning asynchronous</h4>
+                                    <p>Using asynchronous console consumers will help you to split, literally, between write and read operations. Even across different infrastructure elements. We will turn our application asynchronous, adding test coverage and some tips and tricks. </p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ***** Service Area End ***** -->
+
+        <!-- ***** My video Area Start ***** -->
+        <div class="my-video-area bg-img bg-overlay jarallax section-padding-200" style="background-image: url(img/bg-img/1.jpg);">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12 col-lg-8">
+                        <!-- Video btn -->
+                        <div class="video--btn text-center wow fadeInUp" data-wow-delay="300ms">
+                            <a href="https://www.youtube.com/watch?v=gbXEPHsTkgU" class="videobtn"><i class="arrow_triangle-right"></i></a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Down Icon -->
-        <div class="down-icon wow fadeInUp" data-wow-delay="300ms" id="scrollDown">
-            <a href="#"><i class="arrow_down"></i></a>
-        </div>
-    </section>
-    <!-- ***** Welcome Area End ***** -->
+        <!-- ***** My video Area End ***** -->
 
-    <!-- ***** Service Area Start ***** -->
-    <section class="my-service-area bg-gray section-padding-100-70 clearfix" id="course-agenda">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
+        <!-- ***** My Experience Area Start ***** -->
+        <section class="my-experience-area section-padding-100 clearfix" id="next-sessions">
+            <div class="container">
+                <div class="row">
                     <!-- Section Title -->
-                    <div class="section-title text-center wow fadeInUp" data-wow-delay="300ms">
-                        <h2>Course Agenda</h2>
+                    <div class="col-12">
+                        <div class="section-title text-center wow fadeInUp" data-wow-delay="300ms">
+                            <h2>Next Sessions</h2>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-12">
+                        <div class="experience-timeline">
+                            <!-- Single Experience -->
+                            <div class="single-experience wow fadeInUp" data-wow-delay="300ms">
+                                <h6 class="works-year">4-5 Octuber, 2019</h6>
+                                <h4 class="designation">Valencia (Spanish)</h4>
+                                <h6 class="company-name"><a href="https://www.wearemarketing.com/">We Are Marketing HQ</a></h6>
+                                <p>Early bird tickets <span class="price">( 250€ <i>VAT exc</i> )</span> available until September 13th - <a href="#contact">Book a seat</a></p>
+                                <p>Regular tickets <span class="price">( 400€ <i>VAT exc</i> )</span> available from September 13th
+                            </div>
+
+                            <!-- Single Experience -->
+                            <div class="single-experience wow fadeInUp" data-wow-delay="300ms">
+                                <h6 class="works-year">1-2 November, 2019</h6>
+                                <h4 class="designation">Barcelona (Spanish)</h4>
+                                <h6 class="company-name">To be decided</h6>
+                                <p>Early bird tickets <span class="price">( 250€ <i>VAT exc</i> )</span> available until Octuber 11th - <a href="#contact">Book a seat</a></p>
+                                <p>Regular tickets <span class="price">( 400€ <i>VAT exc</i> )</span> available from Octuber 11th
+                            </div>
+
+                            <!-- Single Experience -->
+                            <div class="single-experience wow fadeInUp" data-wow-delay="300ms">
+                                <h6 class="works-year">22-23 November, 2019</h6>
+                                <h4 class="designation">Bilbao (Spanish)</h4>
+                                <h6 class="company-name">To be decided</h6>
+                                <p>Early bird tickets <span class="price">( 250€ <i>VAT exc</i> )</span> available until November 1st - <a href="#contact">Book a seat</a></p>
+                                <p>Regular tickets <span class="price">( 400€ <i>VAT exc</i> )</span> available from November 1st
+                            </div>
+
+                            <!-- Single Experience -->
+                            <div class="single-experience wow fadeInUp" data-wow-delay="300ms">
+                                <h6 class="works-year">13-14 December, 2019</h6>
+                                <h4 class="designation">Sevilla (Spanish)</h4>
+                                <h6 class="company-name">To be decided</h6>
+                                <p>Early bird tickets <span class="price">( 250€ <i>VAT exc</i> )</span> available until November 22th - <a href="#contact">Book a seat</a></p>
+                                <p>Regular tickets <span class="price">( 400€ <i>VAT exc</i> )</span> available from November 22th
+                            </div>
+
+                            <!-- Single Experience -->
+                            <div class="single-experience wow fadeInUp" data-wow-delay="300ms">
+                                <h6 class="works-year">20-21 December, 2019</h6>
+                                <h4 class="designation">Madrid (Spanish)</h4>
+                                <h6 class="company-name">To be decided</h6>
+                                <p>Early bird tickets <span class="price">( 250€ <i>VAT exc</i> )</span> available until November 29th - <a href="#contact">Book a seat</a></p>
+                                <p>Regular tickets <span class="price">( 400€ <i>VAT exc</i> )</span> available from November 29th
+                            </div>
+
+                            <!-- Single Experience -->
+                            <div class="single-experience wow fadeInUp" data-wow-delay="300ms">
+                                <h6 class="works-year">3-4 January, 2020</h6>
+                                <h4 class="designation">Paris (English)</h4>
+                                <h6 class="company-name">To be decided</h6>
+                                <p>Early bird tickets <span class="price">( 250€ <i>VAT exc</i> )</span> available until December 13th - <a href="#contact">Book a seat</a></p>
+                                <p>Regular tickets <span class="price">( 400€ <i>VAT exc</i> )</span> available from December 13th
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
+        </section>
+        <!-- ***** My Experience Area End ***** -->
 
-            <div class="row">
-                <!-- Service Content Area -->
-                <div class="col-12 col-sm-6 col-lg-4">
-                    <a href="course.html#skeleton" >
+        <!-- ***** Service Area Start ***** -->
+        <section class="my-service-area bg-gray section-padding-100-70 clearfix" id="companies-training">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <!-- Section Title -->
+                        <div class="section-title text-center wow fadeInUp" data-wow-delay="300ms">
+                            <h2>Companies Training</h2>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-12">
+                        <!-- Section Title -->
+                        <div class="wow fadeInUp" data-wow-delay="300ms">
+                            <p>
+                                This course can be hired by companies. The course will be 3 days long in that case. After the first 2 regular days, we will meet the team an extra day to analyze the company specific needs, like discussing what services can the company create in the future, how to split boundaries and some reinforcement in desired parts.
+                            </p>
+                            <p>
+                                In order to know more details or make your reservation, send an email to <strong>info@php.coach</strong> and we will make sure that the course fits your team and needs.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row mt-50">
+                    <!-- Service Content Area -->
+                    <div class="col-12 col-sm-6 col-lg-4">
+                        <a href="http://php.coach" target="_blank">
+                            <div class="service-content-area text-center mb-30 wow fadeInUp" data-wow-delay="300ms">
+                                <!-- Icon -->
+                                <div class="service-icon">
+                                    <i class="fa fa-users"></i>
+                                </div>
+                                <!-- Content text -->
+                                <div class="service-content-text">
+                                    <h4>Your audience</h4>
+                                    <p>This course will be only for you. The course is available until 10 attendees</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- Service Content Area -->
+                    <div class="col-12 col-sm-6 col-lg-4">
                         <div class="service-content-area text-center mb-30 wow fadeInUp" data-wow-delay="300ms">
                             <!-- Icon -->
                             <div class="service-icon">
-                                <i class="fa fa-skull"></i>
+                                <i class="fa fa-map-marker"></i>
                             </div>
                             <!-- Content text -->
                             <div class="service-content-text">
-                                <h4>Project skeleton</h4>
-                                <p>Work always with a base skeleton. This skeleton will never contain business logic, but all what you'll need to deploy the project anywhere</p>
+                                <h4>In your offices</h4>
+                                <p>Your employees will be able to work with their computers, so the course will be in your own offices</p>
                             </div>
                         </div>
-                    </a>
-                </div>
+                    </div>
 
-                <!-- Service Content Area -->
-                <div class="col-12 col-sm-6 col-lg-4">
-                    <a href="course.html#docker-basics">
+                    <!-- Service Content Area -->
+                    <div class="col-12 col-sm-6 col-lg-4">
                         <div class="service-content-area text-center mb-30 wow fadeInUp" data-wow-delay="300ms">
                             <!-- Icon -->
                             <div class="service-icon">
-                                <i class="fab fa-docker"></i>
+                                <i class="fa fa-star"></i>
                             </div>
                             <!-- Content text -->
                             <div class="service-content-text">
-                                <h4>Docker basics</h4>
-                                <p>We will learn all the needed docker skills you need to deploy your application. The course assumes that you already know what docker is and why we use it </p>
+                                <h4>An extra day</h4>
+                                <p>We will offer you an extra training day. We will all analyze how to start improving your current projects.</p>
                             </div>
                         </div>
-                    </a>
-                </div>
+                    </div>
 
-                <!-- Service Content Area -->
-                <div class="col-12 col-sm-6 col-lg-4">
-                    <a href="course.html#reactphp-server">
+                    <!-- Service Content Area -->
+                    <div class="col-12 col-sm-6 col-lg-4">
                         <div class="service-content-area text-center mb-30 wow fadeInUp" data-wow-delay="300ms">
                             <!-- Icon -->
                             <div class="service-icon">
-                                <i class="fa fa-server"></i>
+                                <i class="fa fa-money"></i>
                             </div>
                             <!-- Content text -->
                             <div class="service-content-text">
-                                <h4>ReactPHP Server</h4>
-                                <p>Our project will run with ReactPHP as a Server. That will bring us deploy simplicity and an insane performance improvement.</p>
+                                <h4>Pay in 30 days</h4>
+                                <p>You will be able to pay the course until 30 days after the course is finished.</p>
                             </div>
                         </div>
-                    </a>
+                    </div>
+
+                    <!-- Service Content Area -->
+                    <div class="col-12 col-sm-6 col-lg-4">
+                        <a href="https://www.youtube.com/channel/UC4GrdGq5JfI4tDmOuXViyxQ" target="_blank">
+                            <div class="service-content-area text-center mb-30 wow fadeInUp" data-wow-delay="300ms">
+                                <!-- Icon -->
+                                <div class="service-icon">
+                                    <i class="fa fa-th"></i>
+                                </div>
+                                <!-- Content text -->
+                                <div class="service-content-text">
+                                    <h4>Become part of our family</h4>
+                                    <p>Once the course is finished, your logo will be added in our clients landing.</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- Service Content Area -->
+                    <div class="col-12 col-sm-6 col-lg-4">
+                        <a href="https://www.youtube.com/channel/UC4GrdGq5JfI4tDmOuXViyxQ" target="_blank">
+                            <div class="service-content-area text-center mb-30 wow fadeInUp" data-wow-delay="300ms">
+                                <!-- Icon -->
+                                <div class="service-icon">
+                                    <i class="fa fa-handshake-o"></i>
+                                </div>
+                                <!-- Content text -->
+                                <div class="service-content-text">
+                                    <h4>Subsidized course by Fundae - Tripartita</h4>
+                                    <p><i>Only for Spanish companies</i> - This course is a subsidized course by using the Fundae program (formerly Tripartita)</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ***** Service Area End ***** -->
+
+
+        <!-- ***** Service Area Start ***** -->
+        <section class="my-service-area bg-light section-padding-100-70 clearfix" id="about-the-trainer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <!-- Section Title -->
+                        <div class="section-title text-center wow fadeInUp" data-wow-delay="300ms">
+                            <h2>About the trainer</h2>
+                        </div>
+                    </div>
                 </div>
 
-                <!-- Service Content Area -->
-                <div class="col-12 col-sm-6 col-lg-4">
-                    <a href="course.html#domain-definition">
-                        <div class="service-content-area text-center mb-30 wow fadeInUp" data-wow-delay="300ms">
-                            <!-- Icon -->
-                            <div class="service-icon">
-                                <i class="fa fa-project-diagram"></i>
-                            </div>
+                <div class="row">
+                    <!-- Service Content Area -->
+                    <div class="col-12 col-sm-8">
+                        <div class="mb-30">
                             <!-- Content text -->
-                            <div class="service-content-text">
-                                <h4>Domain definition</h4>
-                                <p>
-                                    Always with a simple but complete project in front of us, we will start looking at our model. In this part we will not load any external dependency like Redis or Mysql. Only our own classes. After this module, our project will be working properly without any persistence layer and completely synchronous.
-
-                                </p>
-                            </div>
+                            <h4>Marc Morera</h4>
+                            <p>Marc Morera is a long experienced PHP architect, author of multiple open source Github libraries and co-founder of some projects like Elcodi or Apisearch. </p>
+                            <p>He has specialized specifically on making PHP applications faster, lighter and better by applying quite known pattern designs in a way that barely each developer can really understand. </p>
+                            <p>At the moment he is spending his professional time by doing some trainings, tons of open source code and working in Apisearch as a side project. </p>
                         </div>
-                    </a>
-                </div>
+                    </div>
 
-                <!-- Service Content Area -->
-                <div class="col-12 col-sm-6 col-lg-4">
-                    <a href="course.html#io-dependencies">
-                        <div class="service-content-area text-center mb-30 wow fadeInUp" data-wow-delay="300ms">
-                            <!-- Icon -->
-                            <div class="service-icon">
-                                <i class="fa fa-layer-group"></i>
-                            </div>
-                            <!-- Content text -->
-                            <div class="service-content-text">
-                                <h4>I/O dependencies</h4>
-                                <p>Once our project is properly working, then we'll add the persistence layers, like Redis or Mysql. We will see that adding tests coverage to these classes is extremely trivial and fast. We will see how easy is to change from one adapter to another. </p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
+                    <!-- Service Content Area -->
+                    <div class="col-12 col-sm-4">
+                        <img src="img/mmoreram.png" alt="Marc Morera image">
 
-                <!-- Service Content Area -->
-                <div class="col-12 col-sm-6 col-lg-4">
-                    <a href="course.html#turning-asynchronous">
-                        <div class="service-content-area text-center mb-30 wow fadeInUp" data-wow-delay="300ms">
-                            <!-- Icon -->
-                            <div class="service-icon">
-                                <i class="fa fa-refresh"></i>
-                            </div>
-                            <!-- Content text -->
-                            <div class="service-content-text">
-                                <h4>Turning asynchronous</h4>
-                                <p>Using asynchronous console consumers will help you to split, literally, between write and read operations. Even across different infrastructure elements. We will turn our application asynchronous, adding test coverage and some tips and tricks. </p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- ***** Service Area End ***** -->
-
-    <!-- ***** My video Area Start ***** -->
-    <div class="my-video-area bg-img bg-overlay jarallax section-padding-200" style="background-image: url(img/bg-img/1.jpg);">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-12 col-lg-8">
-                    <!-- Video btn -->
-                    <div class="video--btn text-center wow fadeInUp" data-wow-delay="300ms">
-                        <a href="https://www.youtube.com/watch?v=gbXEPHsTkgU" class="videobtn"><i class="arrow_triangle-right"></i></a>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
-    <!-- ***** My video Area End ***** -->
+        </section>
+        <!-- ***** Service Area End ***** -->
 
-    <!-- ***** My Experience Area Start ***** -->
-    <section class="my-experience-area section-padding-100 clearfix" id="next-sessions">
-        <div class="container">
-            <div class="row">
-                <!-- Section Title -->
-                <div class="col-12">
-                    <div class="section-title text-center wow fadeInUp" data-wow-delay="300ms">
-                        <h2>Next Sessions</h2>
-                    </div>
-                </div>
-            </div>
 
-            <div class="row">
-                <div class="col-12">
-                    <div class="experience-timeline">
-                        <!-- Single Experience -->
-                        <div class="single-experience wow fadeInUp" data-wow-delay="300ms">
-                            <h6 class="works-year">4-5 Octuber, 2019</h6>
-                            <h4 class="designation">Valencia (Spanish)</h4>
-                            <h6 class="company-name"><a href="https://www.wearemarketing.com/">We Are Marketing HQ</a></h6>
-                            <p>Early bird tickets <span class="price">( 250€ <i>VAT exc</i> )</span> available until September 13th - <a href="#contact">Book a seat</a></p>
-                            <p>Regular tickets <span class="price">( 400€ <i>VAT exc</i> )</span> available from September 13th
-                        </div>
-
-                        <!-- Single Experience -->
-                        <div class="single-experience wow fadeInUp" data-wow-delay="300ms">
-                            <h6 class="works-year">1-2 November, 2019</h6>
-                            <h4 class="designation">Barcelona (Spanish)</h4>
-                            <h6 class="company-name">To be decided</h6>
-                            <p>Early bird tickets <span class="price">( 250€ <i>VAT exc</i> )</span> available until Octuber 11th - <a href="#contact">Book a seat</a></p>
-                            <p>Regular tickets <span class="price">( 400€ <i>VAT exc</i> )</span> available from Octuber 11th
-                        </div>
-
-                        <!-- Single Experience -->
-                        <div class="single-experience wow fadeInUp" data-wow-delay="300ms">
-                            <h6 class="works-year">22-23 November, 2019</h6>
-                            <h4 class="designation">Bilbao (Spanish)</h4>
-                            <h6 class="company-name">To be decided</h6>
-                            <p>Early bird tickets <span class="price">( 250€ <i>VAT exc</i> )</span> available until November 1st - <a href="#contact">Book a seat</a></p>
-                            <p>Regular tickets <span class="price">( 400€ <i>VAT exc</i> )</span> available from November 1st
-                        </div>
-
-                        <!-- Single Experience -->
-                        <div class="single-experience wow fadeInUp" data-wow-delay="300ms">
-                            <h6 class="works-year">13-14 December, 2019</h6>
-                            <h4 class="designation">Sevilla (Spanish)</h4>
-                            <h6 class="company-name">To be decided</h6>
-                            <p>Early bird tickets <span class="price">( 250€ <i>VAT exc</i> )</span> available until November 22th - <a href="#contact">Book a seat</a></p>
-                            <p>Regular tickets <span class="price">( 400€ <i>VAT exc</i> )</span> available from November 22th
-                        </div>
-
-                        <!-- Single Experience -->
-                        <div class="single-experience wow fadeInUp" data-wow-delay="300ms">
-                            <h6 class="works-year">20-21 December, 2019</h6>
-                            <h4 class="designation">Madrid (Spanish)</h4>
-                            <h6 class="company-name">To be decided</h6>
-                            <p>Early bird tickets <span class="price">( 250€ <i>VAT exc</i> )</span> available until November 29th - <a href="#contact">Book a seat</a></p>
-                            <p>Regular tickets <span class="price">( 400€ <i>VAT exc</i> )</span> available from November 29th
-                        </div>
-
-                        <!-- Single Experience -->
-                        <div class="single-experience wow fadeInUp" data-wow-delay="300ms">
-                            <h6 class="works-year">3-4 January, 2020</h6>
-                            <h4 class="designation">Paris (English)</h4>
-                            <h6 class="company-name">To be decided</h6>
-                            <p>Early bird tickets <span class="price">( 250€ <i>VAT exc</i> )</span> available until December 13th - <a href="#contact">Book a seat</a></p>
-                            <p>Regular tickets <span class="price">( 400€ <i>VAT exc</i> )</span> available from December 13th
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- ***** My Experience Area End ***** -->
-
-    <!-- ***** Service Area Start ***** -->
-    <section class="my-service-area bg-gray section-padding-100-70 clearfix" id="companies-training">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <!-- Section Title -->
-                    <div class="section-title text-center wow fadeInUp" data-wow-delay="300ms">
-                        <h2>Companies Training</h2>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-12">
-                    <!-- Section Title -->
-                    <div class="wow fadeInUp" data-wow-delay="300ms">
-                        <p>
-                            This course can be hired by companies. The course will be 3 days long in that case. After the first 2 regular days, we will meet the team an extra day to analyze the company specific needs, like discussing what services can the company create in the future, how to split boundaries and some reinforcement in desired parts.
-                        </p>
-                        <p>
-                            In order to know more details or make your reservation, send an email to <strong>info@php.coach</strong> and we will make sure that the course fits your team and needs.
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row mt-50">
-                <!-- Service Content Area -->
-                <div class="col-12 col-sm-6 col-lg-4">
-                    <a href="http://php.coach" target="_blank">
-                        <div class="service-content-area text-center mb-30 wow fadeInUp" data-wow-delay="300ms">
-                            <!-- Icon -->
-                            <div class="service-icon">
-                                <i class="fa fa-users"></i>
-                            </div>
-                            <!-- Content text -->
-                            <div class="service-content-text">
-                                <h4>Your audience</h4>
-                                <p>This course will be only for you. The course is available until 10 attendees</p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-
-                <!-- Service Content Area -->
-                <div class="col-12 col-sm-6 col-lg-4">
-                    <div class="service-content-area text-center mb-30 wow fadeInUp" data-wow-delay="300ms">
-                        <!-- Icon -->
-                        <div class="service-icon">
-                            <i class="fa fa-map-marker"></i>
-                        </div>
-                        <!-- Content text -->
-                        <div class="service-content-text">
-                            <h4>In your offices</h4>
-                            <p>Your employees will be able to work with their computers, so the course will be in your own offices</p>
+        <!-- ***** Contact Area Start ***** -->
+        <section class="contact-me-area bg-white section-padding-100-0" id="book-a-seat">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-8">
+                        <!-- Section Title -->
+                        <div class="section-title text-center wow fadeInUp" data-wow-delay="300ms">
+                            <h2>Book a seat</h2>
                         </div>
                     </div>
                 </div>
 
-                <!-- Service Content Area -->
-                <div class="col-12 col-sm-6 col-lg-4">
-                    <div class="service-content-area text-center mb-30 wow fadeInUp" data-wow-delay="300ms">
-                        <!-- Icon -->
-                        <div class="service-icon">
-                            <i class="fa fa-star"></i>
-                        </div>
-                        <!-- Content text -->
-                        <div class="service-content-text">
-                            <h4>An extra day</h4>
-                            <p>We will offer you an extra training day. We will all analyze how to start improving your current projects.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Service Content Area -->
-                <div class="col-12 col-sm-6 col-lg-4">
-                    <div class="service-content-area text-center mb-30 wow fadeInUp" data-wow-delay="300ms">
-                        <!-- Icon -->
-                        <div class="service-icon">
-                            <i class="fa fa-money"></i>
-                        </div>
-                        <!-- Content text -->
-                        <div class="service-content-text">
-                            <h4>Pay in 30 days</h4>
-                            <p>You will be able to pay the course until 30 days after the course is finished.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Service Content Area -->
-                <div class="col-12 col-sm-6 col-lg-4">
-                    <a href="https://www.youtube.com/channel/UC4GrdGq5JfI4tDmOuXViyxQ" target="_blank">
-                        <div class="service-content-area text-center mb-30 wow fadeInUp" data-wow-delay="300ms">
-                            <!-- Icon -->
-                            <div class="service-icon">
-                                <i class="fa fa-th"></i>
-                            </div>
-                            <!-- Content text -->
-                            <div class="service-content-text">
-                                <h4>Become part of our family</h4>
-                                <p>Once the course is finished, your logo will be added in our clients landing.</p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-
-                <!-- Service Content Area -->
-                <div class="col-12 col-sm-6 col-lg-4">
-                    <a href="https://www.youtube.com/channel/UC4GrdGq5JfI4tDmOuXViyxQ" target="_blank">
-                        <div class="service-content-area text-center mb-30 wow fadeInUp" data-wow-delay="300ms">
-                            <!-- Icon -->
-                            <div class="service-icon">
-                                <i class="fa fa-handshake-o"></i>
-                            </div>
-                            <!-- Content text -->
-                            <div class="service-content-text">
-                                <h4>Subsidized course by Fundae - Tripartita</h4>
-                                <p><i>Only for Spanish companies</i> - This course is a subsidized course by using the Fundae program (formerly Tripartita)</p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- ***** Service Area End ***** -->
-
-
-    <!-- ***** Service Area Start ***** -->
-    <section class="my-service-area bg-light section-padding-100-70 clearfix" id="about-the-trainer">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <!-- Section Title -->
-                    <div class="section-title text-center wow fadeInUp" data-wow-delay="300ms">
-                        <h2>About the trainer</h2>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row">
-                <!-- Service Content Area -->
-                <div class="col-12 col-sm-8">
-                    <div class="mb-30">
-                        <!-- Content text -->
-                        <h4>Marc Morera</h4>
-                        <p>Marc Morera is a long experienced PHP architect, author of multiple open source Github libraries and co-founder of some projects like Elcodi or Apisearch. </p>
-                        <p>He has specialized specifically on making PHP applications faster, lighter and better by applying quite known pattern designs in a way that barely each developer can really understand. </p>
-                        <p>At the moment he is spending his professional time by doing some trainings, tons of open source code and working in Apisearch as a side project. </p>
-                    </div>
-                </div>
-
-                <!-- Service Content Area -->
-                <div class="col-12 col-sm-4">
-                    <img src="img/mmoreram.png" alt="Marc Morera image">
-
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- ***** Service Area End ***** -->
-
-
-    <!-- ***** Contact Area Start ***** -->
-    <section class="contact-me-area bg-white section-padding-100-0" id="book-a-seat">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 col-md-8">
-                    <!-- Section Title -->
-                    <div class="section-title text-center wow fadeInUp" data-wow-delay="300ms">
-                        <h2>Book a seat</h2>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row">
-                <!-- Contact Form -->
-                <div class="col-12 col-md-8">
-                    <div class="contact_from_area clearfix mb-100 wow fadeInUp" data-wow-delay="300ms">
-                        <div class="contact_form">
-                            <form action="https://mmoreram.us3.list-manage.com/subscribe/post?u=c11fd3061a6f0d72f6464d2f4&amp;id=2388f12177"
-                                  method="post" id="mc-embedded-subscribe-form"
-                                  name="mc-embedded-subscribe-form" class="validate"
-                                  target="_blank" novalidate>
-                                <div class="contact_input_area">
-                                    <div id="success_fail_info"></div>
-                                    <div class="row">
-                                        <!-- Form Group -->
-                                        <div class="col-12">
-                                            <div class="form-group">
-                                                <input type="text" class="form-control mb-30" name="FNAME" id="mce-FNAME" placeholder="Your Name" required>
+                <div class="row">
+                    <!-- Contact Form -->
+                    <div class="col-12 col-md-8">
+                        <div class="contact_from_area clearfix mb-100 wow fadeInUp" data-wow-delay="300ms">
+                            <div class="contact_form">
+                                <form action="https://mmoreram.us3.list-manage.com/subscribe/post?u=c11fd3061a6f0d72f6464d2f4&amp;id=2388f12177"
+                                      method="post" id="mc-embedded-subscribe-form"
+                                      name="mc-embedded-subscribe-form" class="validate"
+                                      target="_blank" novalidate>
+                                    <div class="contact_input_area">
+                                        <div id="success_fail_info"></div>
+                                        <div class="row">
+                                            <!-- Form Group -->
+                                            <div class="col-12">
+                                                <div class="form-group">
+                                                    <input type="text" class="form-control mb-30" name="FNAME" id="mce-FNAME" placeholder="Your Name" required>
+                                                </div>
                                             </div>
-                                        </div>
-                                        <!-- Form Group -->
-                                        <div class="col-12 col-lg-6">
-                                            <div class="form-group">
-                                                <input type="email" class="form-control mb-30" name="EMAIL" id="mce-EMAIL" placeholder="E-mail" required>
+                                            <!-- Form Group -->
+                                            <div class="col-12 col-lg-6">
+                                                <div class="form-group">
+                                                    <input type="email" class="form-control mb-30" name="EMAIL" id="mce-EMAIL" placeholder="E-mail" required>
+                                                </div>
                                             </div>
-                                        </div>
-                                        <!-- Form Group -->
-                                        <div class="col-12 col-lg-6">
-                                            <div class="form-group">
-                                                <input type="text" class="form-control mb-30" name="CITY" id="mce-CITY" placeholder="Subject">
+                                            <!-- Form Group -->
+                                            <div class="col-12 col-lg-6">
+                                                <div class="form-group">
+                                                    <input type="text" class="form-control mb-30" name="CITY" id="mce-CITY" placeholder="Subject">
+                                                </div>
                                             </div>
-                                        </div>
-                                        <!-- Form Group -->
-                                        <div class="col-12">
-                                            <div class="form-group">
-                                                <textarea name="CONTENT" class="form-control mb-30" id="mce-CONTENT" cols="30" rows="6" placeholder="Your Message *" required></textarea>
+                                            <!-- Form Group -->
+                                            <div class="col-12">
+                                                <div class="form-group">
+                                                    <textarea name="CONTENT" class="form-control mb-30" id="mce-CONTENT" cols="30" rows="6" placeholder="Your Message *" required></textarea>
+                                                </div>
                                             </div>
-                                        </div>
-                                        <!-- Button -->
-                                        <div class="col-12 text-center">
-                                            <button type="submit" class="btn dornee-btn w-100">Send now</button>
+                                            <!-- Button -->
+                                            <div class="col-12 text-center">
+                                                <button type="submit" class="btn dornee-btn w-100">Send now</button>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                            </form>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-4">
+                        <div class="contact-information mb-100">
+                            <h4 class="mb-4 wow fadeInUp" data-wow-delay="300ms">Get In Touch</h4>
+
+                            <!-- Single Contact Info -->
+                            <div class="single-contact-info wow fadeInUp" data-wow-delay="300ms">
+                                <h6><i class="icon_pin_alt"></i> Address:</h6>
+                                <p>Barcelona Area</p>
+                            </div>
+                            <!-- Single Contact Info -->
+                            <div class="single-contact-info wow fadeInUp" data-wow-delay="300ms">
+                                <h6><i class="icon_mail_alt"></i> Email:</h6>
+                                <p>info@php.coach</p>
+                            </div>
+                            <!-- Single Contact Info -->
+                            <div class="single-contact-info wow fadeInUp" data-wow-delay="300ms">
+                                <h6><i class="icon_globe-2"></i> Website:</h6>
+                                <p>https://php.coach</p>
+                            </div>
                         </div>
                     </div>
                 </div>
+            </div>
+        </section>
+        <!-- ***** Contact Area End ***** -->
 
-                <div class="col-12 col-md-4">
-                    <div class="contact-information mb-100">
-                        <h4 class="mb-4 wow fadeInUp" data-wow-delay="300ms">Get In Touch</h4>
 
-                        <!-- Single Contact Info -->
-                        <div class="single-contact-info wow fadeInUp" data-wow-delay="300ms">
-                            <h6><i class="icon_pin_alt"></i> Address:</h6>
-                            <p>Barcelona Area</p>
-                        </div>
-                        <!-- Single Contact Info -->
-                        <div class="single-contact-info wow fadeInUp" data-wow-delay="300ms">
-                            <h6><i class="icon_mail_alt"></i> Email:</h6>
-                            <p>info@php.coach</p>
-                        </div>
-                        <!-- Single Contact Info -->
-                        <div class="single-contact-info wow fadeInUp" data-wow-delay="300ms">
-                            <h6><i class="icon_globe-2"></i> Website:</h6>
-                            <p>https://php.coach</p>
+
+        <!-- ***** Footer Area Start ***** -->
+        <footer class="footer-bottom-area section-padding-50">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="footer--content-text text-center">
+                            <div class="footer-social-icon d-flex align-items-center justify-content-center">
+                                <a href="https://twitter.com/mmoreram" data-toggle="tooltip" data-placement="top" title="Twitter"><i class="social_twitter"></i></a>
+                                <a href="https://www.linkedin.com/in/mmoreram/" data-toggle="tooltip" data-placement="top" title="Linkedin"><i class="social_linkedin"></i></a>
+                                <a href="https://www.youtube.com/channel/UC4GrdGq5JfI4tDmOuXViyxQ" data-toggle="tooltip" data-placement="top" title="Youtube"><i class="social_youtube"></i></a>
+                            </div>
+                            <p>Copyright ©2019 All rights reserved by <a href="#" target="_blank">Classy Theme</a></p>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <!-- ***** Contact Area End ***** -->
-
-
-    <!-- ***** Footer Area Start ***** -->
-    <footer class="footer-bottom-area section-padding-50">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="footer--content-text text-center">
-                        <div class="footer-social-icon d-flex align-items-center justify-content-center">
-                            <a href="https://twitter.com/mmoreram" data-toggle="tooltip" data-placement="top" title="Twitter"><i class="social_twitter"></i></a>
-                            <a href="https://www.linkedin.com/in/mmoreram/" data-toggle="tooltip" data-placement="top" title="Linkedin"><i class="social_linkedin"></i></a>
-                            <a href="https://www.youtube.com/channel/UC4GrdGq5JfI4tDmOuXViyxQ" data-toggle="tooltip" data-placement="top" title="Youtube"><i class="social_youtube"></i></a>
-                        </div>
-                        <p>Copyright ©2019 All rights reserved by <a href="#" target="_blank">Classy Theme</a></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <!-- ***** Footer Area End ***** -->
+        </footer>
+        <!-- ***** Footer Area End ***** -->
+    </div>
 
     <!-- All JavaScript Files -->
     <script src="js/jquery.min.js"></script>
