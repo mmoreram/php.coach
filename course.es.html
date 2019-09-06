@@ -9,7 +9,7 @@
     <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
     <!-- Title -->
-    <title>Marc Morera</title>
+    <title>PHP Coach - Courses about PHP, Microservices and ReactPHP</title>
 
     <!-- Main Style -->
     <link rel="stylesheet" href="style.css">
@@ -32,6 +32,11 @@
 
         .point-zone ul  {
             margin-left: 30px;
+        }
+
+        p.important {
+            padding-left: 20px;
+            border-left: red 10px solid;
         }
     </style>
 
@@ -56,8 +61,8 @@
         <div class="dornee-menu pl-5">
             <nav class="dorneenav">
                 <ul id="nav">
-                    <li class="active"><a href="#requisites">Requisitos</a></li>
-                    <li><a href="#skeleton"><span class="fa fa-skull"></span>&nbsp;&nbsp;Esqueleto</a></li>
+                    <li><a href="#requisites">Requisitos</a></li>
+                    <li><a href="#skeleton"><span class="fa fa-skull"></span>&nbsp;&nbsp;Estructura</a></li>
                     <li><a href="#docker-basics"><span class="fab fa-docker"></span>&nbsp;&nbsp;Básicos en Docker</a></li>
                     <li><a href="#reactphp-server"><span class="fa fa-server"></span>&nbsp;&nbsp;Servidor en ReactPHP</a></li>
                     <li><a href="#domain-definition"><span class="fa fa-project-diagram"></span>&nbsp;&nbsp;Definición del Dominio</a></li>
@@ -65,6 +70,7 @@
                     <li><a href="#turning-asynchronous"><span class="fa fa-sync"></span>&nbsp;&nbsp;Cambiando a Asíncrono</a></li>
                     <li><a href="/#book-a-seat"><span class="fa fa-star"></span>&nbsp;&nbsp;Reserva tu asiento</a></li>
                     <li><a href="/"><span class="fa fa-step-backward"></span>&nbsp;&nbsp;PHP Coach</a></li>
+                    <li><a href="https://github.com/mmoreram/php.coach/blob/master/course.es.html" target="_blank"><span class="fa fa-pencil-alt"></span>&nbsp;&nbsp; Edita esta página</a></li>
                 </ul>
             </nav>
         </div>
@@ -78,7 +84,7 @@
         </div>
 
         <!-- Contact Me -->
-        <a href="/#book-a-seat" class="contact-me-btn btn dornee-btn" id="contactMebtn">Reserva tu asiento</a>
+        <a href="/#book-a-seat" class="contact-me-btn btn dornee-btn" id="contactMebtn">Reserva ya!</a>
     </header>
     <!-- ***** Header Area End ***** -->
 
@@ -99,22 +105,28 @@
                         <p>
                             Para que puedas realizar este curso, sería importante que
                             tuvieras en cuenta algunos puntos. Todos ellos son
-                            muy importantes, dado que compartirás el curso con
-                            más alumnos, y desde el primer segundo empezaremos manos
-                            a la obra.
+                            imprescindibles, dado que compartirás el curso con
+                            más personas, y desde el primer segundo nos podremos
+                            manos a la obra.
                         </p>
 
                         <p>
                             No importa el sistema operativo que lleves en tu ordenador,
                             pero asegúrate que sabes como instalar, utilizar y gestionar
-                            las herramientas que necesitaremos.
+                            las herramientas que aquí se detallan.
+                        </p>
+
+                        <p class="important">
+                            <strong>Atención</strong>. Este curso es bonificable mediante Fundae, anteriormente
+                            llamada Tripartita. Ponte en contacto con nosotros para más
+                            información.
                         </p>
 
                         <ul>
-                            <li>Git instalado</li>
-                            <li>Docker y Docker Compose instalado</li>
+                            <li><a href="https://git-scm.com/book/en/v2/Getting-Started-Installing-Git" target="_blank">Git instalado</a></li>
+                            <li><a href="https://docs.docker.com/install/" target="_blank">Docker</a> y <a href="https://docs.docker.com/compose/install/" target="_blank">Docker Compose</a> instalado</li>
                             <li>Una cuenta abierta en <a href="https://circleci.com/signup/" target="_blank">CircleCI</a></li>
-                            <li>Apache Benchmark instalado - apache-tools</li>
+                            <li><a href="https://www.tutorialspoint.com/apache_bench/apache_bench_environment_setup.htm" target="_blank">Apache Benchmark</a> instalado - apache-tools</li>
                         </ul>
                     </div>
                 </div>
@@ -145,8 +157,8 @@
                                 </div>
                                 <!-- Content text -->
                                 <div class="service-content-text">
-                                    <h4>Esqueleto del proyecto</h4>
-                                    <p>Trabaja siempre con un esqueleto base. Este esqueleto nunca tendrá partes de tu lógica de negocio, pero tendrá lo necesario para que puedas deployar tu proyecto en cualquier sitio</p>
+                                    <h4>Estructura del proyecto</h4>
+                                    <p>Trabaja siempre con una estructura base. Esta estructura nunca tendrá partes de tu lógica de negocio, pero tendrá lo necesario para que puedas deployar tu proyecto en cualquier sitio</p>
                                 </div>
                             </div>
                         </a>
@@ -163,7 +175,7 @@
                                 <!-- Content text -->
                                 <div class="service-content-text">
                                     <h4>Basicos de Docker</h4>
-                                    <p>Aprenderemos todo lo que necesitamos saber de docker para deployar nuestras aplicationes. Este curso asume que ya sabes lo que es docker y como utilizarlo</p>
+                                    <p>Aprenderemos todo lo que necesitamos saber de docker para deployar nuestras aplicationes. Este curso asume que ya sabes lo que es docker y para qué sirve</p>
                                 </div>
                             </div>
                         </a>
@@ -196,7 +208,6 @@
                                 </div>
                                 <!-- Content text -->
                                 <div class="service-content-text">
-                                    <h4>Domain definition</h4>
                                     <h4>Definición del dominio</h4>
                                     <p>Con un proyecto simple pero completo delante nuestro, empezaremos a pensar en nuestro modelo. En esta parte no vamos a cargar ninguna dependencia externa como Mysql o Redis. Solo nuestras clases. Después de este módulo, tu proyecto funcionará síncronamente sin ningúna capa de persistencia</p>
                                 </div>
@@ -214,9 +225,8 @@
                                 </div>
                                 <!-- Content text -->
                                 <div class="service-content-text">
-                                    <h4>I/O dependencies</h4>
                                     <h4>Dependencias I/O</h4>
-                                    <p>Once our project is properly working, then we'll add the persistence layers, like Redis or Mysql. We will see that adding tests coverage to these classes is extremely trivial and fast. We will see how easy is to change from one adapter to another. </p>
+                                    <p>Una vez nuestro proyecto ya está funcionando correctamente, vamos a trabajar la capa de persistencia, como Redis o Mysql. Veremos que testear esta capa es trivial y extremadamente rápido. Veremos cuan rápido es cambiar entre adaptadores.</p>
                                 </div>
                             </div>
                         </a>
@@ -228,12 +238,12 @@
                             <div class="service-content-area text-center mb-30 wow fadeInUp" data-wow-delay="300ms">
                                 <!-- Icon -->
                                 <div class="service-icon">
-                                    <i class="fa fa-refresh"></i>
+                                    <i class="fa fa-sync"></i>
                                 </div>
                                 <!-- Content text -->
                                 <div class="service-content-text">
                                     <h4>Turning asynchronous</h4>
-                                    <p>Using asynchronous console consumers will help you to split, literally, between write and read operations. Even across different infrastructure elements. We will turn our application asynchronous, adding test coverage and some tips and tricks. </p>
+                                    <p>Utilizar consumidores asíncronos nos permitirá, literalmente, separar nuestras lecturas y escrituras de una forma física. Incluso entre distintos nodos en nuestra infrastructura. Vamos a transformar nuestra aplicación en asíncrona, añadiendo test coverage y algunos trucos y consejos</p>
                                 </div>
                             </div>
                         </a>
@@ -250,38 +260,42 @@
                     <div class="col-12">
                         <!-- Section Title -->
                         <div class="section-title text-center wow fadeInUp" data-wow-delay="300ms">
-                            <h2><span class="fa fa-skull"></span>&nbsp;&nbsp;Skeleton</h2>
+                            <h2><span class="fa fa-skull"></span>&nbsp;&nbsp;Estructura</h2>
                         </div>
                     </div>
                 </div>
 
                 <div class="row">
                     <div class="col-12">
-                        <p>As easy as it sounds, but most of the times, one of the most
-                            difficult part of any application. In this first chapter of the
-                            project, we will build what will be our basis project. What do
-                            you need to start from the scratch a new project where you will
-                            code your business logic on top of CQRS architecture design and
-                            by using, maybe in the future, asynchronous and non-blocking
-                            classes? What are the basic package you <strong>really</strong>
-                            need in your project in order to start with the thinnest project
-                            in your sandbox?
+
+                        <p>
+                            Parece simple y trivial, pero la mayoría de las veces,
+                            es uno de los puntos más complejos a la hora de empezar
+                            un proyecto. En este primer bloque del curso, empezaremos
+                            por construir lo que será el esqueleto de nuestra aplicación.
+                            ¿Qué necesitamos para empezar desde cero un proyecto donde,
+                            nuestra lógica de negocio, será implementada alrededor
+                            de una arquitectura CQRS, y donde, es posible que en un
+                            futuro, pase a ser código non-blocking y asíncrono?
+                            ¿Cuales son las librerías que <strong>realmente</strong>
+                            vamos a necesitar para empezar con un repositorio lo más
+                            ligero posible?
                         </p>
 
-                        <p>This chapter will explore the foundations of all the project, not
-                            only in the theoretical part, with good practices, but in a
-                            practical way
+                        <p>
+                            En este capítulo exploraremos la base del proyecto, no tan
+                            solo en la parte teórica, sino también en la parte práctica.
                         </p>
 
                         <ul>
-                            <li>Block duration - <strong>3h</strong></li>
-                            <li>Layers definition</li>
-                            <li>Install Symfony4. The framework will work, only, as an entry point </li>
-                            <li>Command Bus as the core member of the project</li>
-                            <li>Commands, command handlers and middleware classes</li>
-                            <li>Our first hello world on top of CQRS</li>
-                            <li>Server support with Nginx + PHP-FPM</li>
-                            <li>Some benchmarking with AB</li>
+                            <li>Duración del bloque - <strong>3h</strong></li>
+                            <li>Definición de capas</li>
+                            <li>Instalamos Symfony4. El framework funcionará, solamente, como un punto de entrada</li>
+                            <li>Command Bus como el elemento core del proyecto</li>
+                            <li>Commands, command handlers y middlewares</li>
+                            <li>Nuestro primer <i>Hello world</i> utilizando CQRS</li>
+                            <li>Soporte en servidor por parte de Nginx + PHP-FPM</li>
+                            <li>Un poco de benchmarking con AB</li>
                         </ul>
                     </div>
                 </div>
@@ -296,34 +310,37 @@
                     <div class="col-12">
                         <!-- Section Title -->
                         <div class="section-title text-center wow fadeInUp" data-wow-delay="300ms">
-                            <h2><span class="fab fa-docker"></span>&nbsp;&nbsp;Docker Basics</h2>
+                            <h2><span class="fab fa-docker"></span>&nbsp;&nbsp;Básicos de Docker</h2>
                         </div>
                     </div>
                 </div>
 
                 <div class="row">
                     <div class="col-12">
-                        <p>Nowadays, one the best way of making your application available
-                            for almost every developer and every modern deploy system is
-                            by adding docker support. Docker is quite easy if you understand
-                            its bases and purpose, and that will be our goal. Once we have
-                            a nice skeleton for our new hello world application, we will
-                            setup both the docker and docker-compose support, for
-                            delivering, testing and developing
+                        <p>
+                            Hoy en dia, una de las mejores formas de hacer que cualquier
+                            aplicación pueda funciona en cualquier entorno moderno es
+                            añadiendo soporte para Docker. Docker es una tecnología bastante
+                            asequible si entiendes su función, y este será nuestro
+                            objetivo. Una vez tengamos nuestra propia estructura para
+                            nuestra aplicación de <i>hello world</i>, vamos a configurar
+                            docker y docker-composer para poder hacer deployments, testing
+                            y desarrollo en local.
                         </p>
 
-                        <p>The goal of this chapter will be adding both a basic development
-                            and testing support for our application. We will add some
-                            CircleCI support to add a hook for our pull requests
+                        <p>
+                            El objetivo de este bloque es añadir soporte de docker
+                            en nuestra aplicación. Añadiremos también integración
+                            con CircleCI para añadir un hook en nuestras pull requests
                         </p>
 
                         <ul>
-                            <li>Block duration - <strong>3h</strong></li>
-                            <li>Docker needed blocks</li>
-                            <li>Docker composer for testing</li>
-                            <li>Creating a base Dockerfile</li>
-                            <li>Our first priceless `assertTrue(true)` test</li>
-                            <li>Make everything run inside CircleCI</li>
+                            <li>Duración del bloque - <strong>3h</strong></li>
+                            <li>Elementos necesarios de Docker</li>
+                            <li>Docker composer para testing</li>
+                            <li>Crear un Dockerfile base</li>
+                            <li>Nuestro primer maravilloso test `assertTrue(true)`</li>
+                            <li>Hagamos que todo funcione en CircleCI</li>
                         </ul>
                     </div>
                 </div>
@@ -338,39 +355,43 @@
                     <div class="col-12">
                         <!-- Section Title -->
                         <div class="section-title text-center wow fadeInUp" data-wow-delay="300ms">
-                            <h2><span class="fa fa-server"></span>&nbsp;&nbsp;ReactPHP Server</h2>
+                            <h2><span class="fa fa-server"></span>&nbsp;&nbsp;Servidor en ReactPHP</h2>
                         </div>
                     </div>
                 </div>
 
                 <div class="row">
                     <div class="col-12">
-                        <p>How fast can a server deliver your service endpoints? Is the
-                            traditional server tools like Nginx or Apache the most optimal
-                            way of serving PHP microservices, or we can really find new ways
-                            of improving even more our work?
-                        </p>
                         <p>
-                            This may be one of the most asked questions in the web
-                            developers world of all times. And we have some stuff here to
-                            talk about, mostly because seems that things can even go faster,
-                            and <strong>FASTER</strong> by using some other techniques, like
-                            using projects like PHP-PM or by using a little bit more our
-                            friend ReactPHP.
+                            ¿Cuan rápido puede responder tu servicio? Son los servidores
+                            tradicionales como Nginx o Apache la forma más óptima
+                            de deployar tus servicios en PHP, o podemos encontrar fórmulas
+                            un poco más eficientes que hagan que la performance de
+                            estos sean aún mucho mejor?
                         </p>
 
                         <p>
-                            The goal of this chapter will be making a small trip from
-                            available PHP servers, going from our already
-                            working-on-production Nginx with PHP-PM, to the brand new
-                            one-thread and blocking ReactPHP server.
+                            Este puede que sea una de las preguntas más formuladas
+                            entre los desarrolladores web desde el principio de los
+                            tiempos. Y aquí tenemos mucho tema del que hablar, básicamente
+                            porque parece que las cosas pueden ir más rápidas...
+                            <strong>MUCHO</strong> más rápidas utilizando otras
+                            tecnologías como PHP-PM o utilizando un poco más al detalle
+                            nuestro gran amigo ReactPHP.
+                        </p>
+
+                        <p>
+                            El objetivo de este capítulo será hacer un pequeño viaje
+                            por todos los servidores PHP, desde el ya conocido y
+                            estable en producción Nginx con PHP-FPM, hasta el nuevo
+                            monothread y blocking ReactPHP server.
                         </p>
 
                         <ul>
-                            <li>Block duration - <strong>2h</strong></li>
-                            <li>First sight at PHP-PM</li>
-                            <li>First sight at ReactPHP server</li>
-                            <li>Benchmarking &amp; discussion</li>
+                            <li>Duración del bloque - <strong>2h</strong></li>
+                            <li>Primer análisis a PHP-PM</li>
+                            <li>Primer análisis al servidor de ReactPHP</li>
+                            <li>Benchmarking & discusión</li>
                         </ul>
                     </div>
                 </div>
@@ -385,7 +406,7 @@
                     <div class="col-12">
                         <!-- Section Title -->
                         <div class="section-title text-center wow fadeInUp" data-wow-delay="300ms">
-                            <h2><span class="fa fa-project-diagram"></span>&nbsp;&nbsp;Domain Definition</h2>
+                            <h2><span class="fa fa-project-diagram"></span>&nbsp;&nbsp;Definición del Dominio</h2>
                         </div>
                     </div>
                 </div>
@@ -393,44 +414,48 @@
                 <div class="row">
                     <div class="col-12">
                         <p>
-                            Now we have a small service that runs as faster as it can run,
-                            but we only have a small hello world endpoint, and would be
-                            difficult for us to make som money just with this feature, so
-                            let's start with our domain.
+                            Ahora ya tenemos un servicio que sirve peticiones tan
+                            rápido como realmente puede hacerlo, pero solo podemos
+                            servir un solo endpoint. Y será complicado ganar un poco
+                            de dinero tan solo con esta funcionalidad, por lo que
+                            vamos a empezar a diseñar nuestro dominio.
                         </p>
+
                         <p>
-                            And our project will be simple. We will craft a small
-                            microservice to take care about users. Not about a login system,
-                            nor a complex user management, but a simple and small user API,
-                            ready to:
+                            Y nuestro proyecto será simple. Crearemos un pequeño
+                            servicio para gestionar usuarios. No será un sistema
+                            de login ni un sistema de gestión demasiado complejo,
+                            solo una pequeña API donde podremos:
                         </p>
+
                         <ul>
-                            <li>Add a new User</li>
-                            <li>Delete an existing User</li>
-                            <li>Edit an existing User</li>
-                            <li>List all users</li>
+                            <li>Añadir un usuario</li>
+                            <li>Eliminar un usuario existente</li>
+                            <li>Editar un usuario existente</li>
+                            <li>Listar todos nuestros usuarios</li>
                         </ul>
+
                         <p>
-                            That will be enough to start understanding some small things
-                            around architecture, like where to place our domain classes,
-                            what these classes should have and what should completely avoid,
-                            and how big this model can really be before start thinking of
-                            making a logical split.
+                            Estos puntos serán suficientes como para entender
+                            ciertos puntos sobre la arquitectura, como donde añadir
+                            nuestras clases de dominio, qué deberían contener estas clases
+                            y que deberían evitar, y cuan grande puede ser dicho dominio
+                            antes de poder aplicar una separación lógica.
                         </p>
 
                         <p>
-                            After this chapter, everything should be working properly, in a
-                            synchronous way, and by saving absolutely everything in memory,
-                            what, even working as expected, wont be useful at all. But hey!
-                            is our first step :)
+                            Después de este capítulo, todo debería estar funcionando
+                            perfectamente de una forma completamente síncrona, y
+                            guardando absolutamente todo en memoria. Aún no siendo
+                            útil de ninguna de las formas, oye, es un primer paso.
                         </p>
 
                         <ul>
-                            <li>Block duration - <strong>3h</strong></li>
-                            <li>Needs analysis</li>
-                            <li>Model classes implementation</li>
-                            <li>I/O repositories interfaces and in-memory implementation </li>
-                            <li>Full testing of our needs, both unit and functional</li>
+                            <li>Duración del bloque - <strong>3h</strong></li>
+                            <li>Análisis de requerimientos</li>
+                            <li>Implementación de las clases del modelo</li>
+                            <li>Interfaces de repositorios y implementación en memoria</li>
+                            <li>Tests completos de nuestras necesidades, tanto unitarios como funcionales</li>
                         </ul>
                     </div>
                 </div>
@@ -447,7 +472,7 @@
                     <div class="col-12">
                         <!-- Section Title -->
                         <div class="section-title text-center wow fadeInUp" data-wow-delay="300ms">
-                            <h2><span class="fa fa-layer-group"></span>&nbsp;&nbsp;I/O Dependencies</h2>
+                            <h2><span class="fa fa-layer-group"></span>&nbsp;&nbsp;Dependencias de I/O</h2>
                         </div>
                     </div>
                 </div>
@@ -455,28 +480,30 @@
                 <div class="row">
                     <div class="col-12">
                         <p>
-                            So let's make it work properly by adding an extra layer in our
-                            project related to I/O operations. In our language, adding some
-                            repository implementations, like the User storage one, or the
-                            Redis one for our cache.
+                            Vamos a hacer que todo funcione correctamente añadiendo una
+                            capa extra en nuestro proyecto, relativa a nuestras implementaciones
+                            de I/O. En nuestro lenguaje, añadir adaptadores para nuestros
+                            repositorios, como el de Repositorio de User, o el de nuestra
+                            capa de caché en Redis.
                         </p>
 
                         <p>
-                            All additions will have to be 100% covered by functional tests.
-                            We will see how trivial is, after all, and only if we make the
-                            right steps, to make all this happen properly and green tested.
+                            Todos estos adaptadores tienen que estar cubiertos por tests
+                            unitarios al 100%, Veremos cómo, a pesar de todo, si seguimos
+                            la arquitectura que vamos a seguir, este ejercicio será trivial
+                            y rápido.
                         </p>
 
                         <p>
-                            After this chapter, the application will turn properly usable
+                            Después de este bloque, nuestra aplicación pasará a ser usable.
                         </p>
 
                         <ul>
-                            <li>Block duration - <strong>3h</strong></li>
-                            <li>Redis adapter for our cache layer</li>
-                            <li>Mysql adapter for our persistence layer</li>
-                            <li>Unit testing of new adapters</li>
-                            <li>Docker adaptation to make tests still work on CircleCI</li>
+                            <li>Duración del bloque - <strong>3h</strong></li>
+                            <li>Adaptador Redis para la capa de caché</li>
+                            <li>Adaptador Mysql para la capa de persistencia</li>
+                            <li>Tests unitarios para los nuevos adaptadores</li>
+                            <li>Adaptación en docker para que los tests sigan funcionando en CircleCI</li>
                         </ul>
                     </div>
                 </div>
@@ -491,7 +518,7 @@
                     <div class="col-12">
                         <!-- Section Title -->
                         <div class="section-title text-center wow fadeInUp" data-wow-delay="300ms">
-                            <h2><span class="fa fa-sync"></span>&nbsp;&nbsp;Turning asynchronous</h2>
+                            <h2><span class="fa fa-sync"></span>&nbsp;&nbsp;Cambiando a Asíncrono</h2>
                         </div>
                     </div>
                 </div>
@@ -499,44 +526,45 @@
                 <div class="row">
                     <div class="col-12">
                         <p>
-                            This is the last, and not less important step. How can we turn
-                            everything a little bit better by turning our writes
-                            asynchronous? Can we really postpone some actions like adding a
-                            new User, and persist this action once the server is more
-                            capable?
+                            Este es el último paso, aunque no el menos importante.
+                            ¿Cómo podemos mejorar el servicio, haciendo que nuestras
+                            escrituras sean asíncronas? ¿Podemos posponer algunas acciones
+                            como añadir un nuevo usuario, y persistir dichas acciones
+                            cuando el servidor no esté tan ocupado?
                         </p>
 
                         <p>
-                            When you craft a new microservice, one of the things you should
-                            take in account is that, eventually, you could have tons of
-                            requests. All reads must be synchronous, of course, but what
-                            happen with writes? Do they have to be synchronous? Can we add
-                            some queues behind the service and consume all these actions in
-                            parallel, taking some work from the server? That would make
-                            reads a little bit faster, right?
+                            Cuando creas un nuevo microservicio, una de las opciones
+                            que siempre deberías valorar es que, eventualmente, puedes
+                            tener una carga muy alta de requests. Las lecturas, claro,
+                            tienen que ser síncronas, pero qué pasa con las escrituras?
+                            Podemos añadir algunas colas y consumir los mensajes en
+                            paralelo, haciendo parte del trabajo del servidor?
+                            Esto haría nuestro servicio un poco más rápido, verdad?
                         </p>
 
                         <p>
-                            We will use RabbitMQ for this purpose, adding some classes in
-                            our CQRS implementation in a way that will blow your mind.
+                            Utilizaremos RabbitMQ para dicha cuestión, añadiendo algunas
+                            clases en nuestra arquitectura CQRS que harán las maravillas
+                            de los más incrédulos.
                         </p>
 
                         <p>
-                            After this chapter, you will have a Symfony4 based PHP
-                            application on top of a ReactPHP server, CQRS as our main
-                            architectural pattern and some basics from what is known as
-                            SOLID. Small classes, small features and a really nice-to-work
-                            repository.
+                            Después de este capítulo, tendremos una aplicación hecha en
+                            Symfony4 utilizando un servidor ReactPHP, CQRS como nuestro
+                            patrón de arquitectura base y algunos conceptos del que
+                            se conoce como SOLID. Pequeñas clases, pequeñas funcionalidades y un
+                            repositorio con el que trabajarás estupendamente.
 
-                            That's the deal.
+                            Este es el trato.
                         </p>
 
                         <ul>
-                            <li>Block duration - <strong>2h</strong></li>
-                            <li>Adding asynchronous middleware for our write operations </li>
-                            <li>RabbitMQ adapter</li>
-                            <li>Adding functional testing coverage for our asynchronous writes</li>
-                            <li>Turn Docker queues friendly</li>
+                            <li>Duración del bloque - <strong>3h</strong></li>
+                            <li>Añadiendo un middleware de asíncronía para nuestras escrituras</li>
+                            <li>Adaptador para RabbitMQ</li>
+                            <li>Añadiendo tests funcionales para nuestras escrituras</li>
+                            <li>Completar Docker para que pueda trabajar con colas</li>
                         </ul>
                     </div>
                 </div>
