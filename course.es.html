@@ -11,7 +11,7 @@
 
     <!-- Main Style -->
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="img/slashslash.ico" type="image/x-icon" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css">
 
     <!-- HTML Meta Tags -->
@@ -53,11 +53,6 @@
         .point-zone ul  {
             margin-left: 30px;
         }
-
-        p.important {
-            padding-left: 20px;
-            border-left: red 10px solid;
-        }
     </style>
 
 </head>
@@ -75,21 +70,20 @@
     <!-- ***** Header Area Start ***** -->
     <header class="header-area">
         <!-- Logo -->
-        <a href="/" class="nav-brand"><img src="img/phpcoach.png" alt=""></a>
+        <a href="/" class="nav-brand"><img src="img/logo.png" alt="PHP Coach logo"></a>
 
         <!-- Menu -->
         <div class="dornee-menu pl-5">
             <nav class="dorneenav">
                 <ul id="nav">
-                    <li><a href="#requisites">Requisitos</a></li>
+                    <li><a href="#requisites"><span class="fa fa-exclamation-triangle"></span>&nbsp;&nbsp;Requisitos</a></li>
                     <li><a href="#skeleton"><span class="fa fa-skull"></span>&nbsp;&nbsp;Estructura</a></li>
                     <li><a href="#docker-basics"><span class="fab fa-docker"></span>&nbsp;&nbsp;Básicos en Docker</a></li>
                     <li><a href="#reactphp-server"><span class="fa fa-server"></span>&nbsp;&nbsp;Servidor en ReactPHP</a></li>
                     <li><a href="#domain-definition"><span class="fa fa-project-diagram"></span>&nbsp;&nbsp;Definición del Dominio</a></li>
                     <li><a href="#io-dependencies"><span class="fa fa-layer-group"></span>&nbsp;&nbsp;Dependencias de I/O</a></li>
                     <li><a href="#turning-asynchronous"><span class="fa fa-sync"></span>&nbsp;&nbsp;Cambiando a Asíncrono</a></li>
-                    <li><a href="/#book-a-seat"><span class="fa fa-star"></span>&nbsp;&nbsp;Reserva tu asiento</a></li>
-                    <li><a href="/"><span class="fa fa-step-backward"></span>&nbsp;&nbsp;PHP Coach</a></li>
+                    <li><a href="/"><span class="fa fa-step-backward"></span>&nbsp;&nbsp;Principal</a></li>
                     <li><a href="https://github.com/mmoreram/php.coach/blob/master/course.es.html" target="_blank"><span class="fa fa-pencil-alt"></span>&nbsp;&nbsp; Edita esta página</a></li>
                 </ul>
             </nav>
@@ -104,7 +98,7 @@
         </div>
 
         <!-- Contact Me -->
-        <a href="/#book-a-seat" class="contact-me-btn btn dornee-btn" id="contactMebtn">Reserva ya!</a>
+        <a href="/#next-sessions" class="contact-me-btn btn dornee-btn" id="contactMebtn">Reserva ya!</a>
     </header>
     <!-- ***** Header Area End ***** -->
 
@@ -136,7 +130,11 @@
                             las herramientas que aquí se detallan.
                         </p>
 
-                        <p class="important">
+                        <p class="info-block">
+                            We have available some translations for this content - <a href="course.html">English version</a>
+                        </p>
+
+                        <p class="alert-block">
                             <strong>Atención</strong>. Este curso es bonificable mediante Fundae, anteriormente
                             llamada Tripartita. Ponte en contacto con nosotros para más
                             información.

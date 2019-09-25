@@ -1,0 +1,276 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="In this two days long face-to-face course we will learn how to craft a PHP microservice from the scratch, by using CQRS, ReactPHP and Docker">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Marc Morera - PHP Coach">
+    <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <!-- Main Style -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css">
+
+    <!-- HTML Meta Tags -->
+    <title>PHP Coach Course - Microservices in PHP</title>
+    <meta name="description" content="In this two days long face-to-face course we will learn how to craft a PHP microservice from the scratch, by using CQRS, ReactPHP and Docker">
+
+    <!-- Google / Search Engine Tags -->
+    <meta itemprop="name" content="PHP Coach Course - Microservices in PHP">
+    <meta itemprop="description" content="In this two days long face-to-face course we will learn how to craft a PHP microservice from the scratch, by using CQRS, ReactPHP and Docker">
+    <meta itemprop="image" content="http://php.coach/img/microservices-on-php.png">
+
+    <!-- Facebook Meta Tags -->
+    <meta property="og:url" content="https://php.coach">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="PHP Coach Course - Microservices in PHP">
+    <meta property="og:description" content="In this two days long face-to-face course we will learn how to craft a PHP microservice from the scratch, by using CQRS, ReactPHP and Docker">
+    <meta property="og:image" content="http://php.coach/img/microservices-on-php.png">
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="PHP Coach Course - Microservices in PHP">
+    <meta name="twitter:description" content="In this two days long face-to-face course we will learn how to craft a PHP microservice from the scratch, by using CQRS, ReactPHP and Docker">
+    <meta name="twitter:image" content="http://php.coach/img/microservices-on-php.png">
+
+    <style>
+        .service-content-area:hover a {
+            color: #e1b12c;
+            font-weight: bold;
+        }
+
+        .alt-btn {
+            background-color: #a36cff;
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="loader"></div>
+    </div>
+
+    <div class="progress-container">
+        <div class="progress-bar" id="scrollIndicator"></div>
+    </div>
+
+    <!-- ***** Header Area Start ***** -->
+    <header class="header-area">
+        <!-- Logo -->
+        <a href="/" class="nav-brand"><img src="img/logo.png" alt="PHP Coach logo"></a>
+
+        <!-- Menu -->
+        <div class="dornee-menu pl-5">
+            <nav class="dorneenav">
+                <ul id="nav">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/#contact"><span class="fa fa-envelope"></span>&nbsp;&nbsp; Contact</a></li>
+                    <li><a href="https://github.com/mmoreram/php.coach/blob/master/thanks.html" target="_blank"><span class="fa fa-pencil-alt"></span>&nbsp;&nbsp; Edit this page</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <!-- Menu HideShow -->
+        <div class="menu-hideshow">
+            <div class="hamburger" id="ham">
+                <span class="a"></span>
+                <span class="b"></span>
+            </div>
+        </div>
+    </header>
+    <!-- ***** Header Area End ***** -->
+
+    <div class="page-content">
+        <!-- ***** Welcome Area Start ***** -->
+        <section class="welcome-area bg-overlay" style="background-image: url(img/pattern.png); background-repeat: repeat" id="home">
+            <div class="container h-100">
+                <div class="row h-100 align-items-center">
+                    <div class="col-12">
+                        <!-- Welcome Content -->
+                        <div class="welcome-content text-center wow fadeInUp" data-wow-delay="300ms">
+                            <img src="img/logo.png" width="40%" alt="PHP Coach logo" class="mb-30" />
+                            <h2>Thanks for purchasing</h2>
+                            <p>We will contact you in order to send you the invoice in case you need it.<br>In the meanwhile, you might want to have a concrete plan of what this course is about, right?</p>
+                            <a href="course.html" class="btn dornee-btn alt-btn mt-30">Detailed course - EN</a>
+                            <a href="course.es.html" class="btn dornee-btn alt-btn mt-30">Curso detallado - ES</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ***** Welcome Area End ***** -->
+
+        <!-- ***** Service Area Start ***** -->
+        <section class="my-service-area bg-gray section-padding-100-70 clearfix" id="course-agenda">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <!-- Section Title -->
+                        <div class="section-title text-center wow fadeInUp" data-wow-delay="300ms">
+                            <h2>Course Agenda</h2>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <!-- Service Content Area -->
+                    <div class="col-12 col-sm-6 col-lg-4">
+                        <a href="course.html#skeleton" >
+                            <div class="service-content-area text-center mb-30 wow fadeInUp" data-wow-delay="300ms">
+                                <!-- Icon -->
+                                <div class="service-icon">
+                                    <i class="fa fa-skull"></i>
+                                </div>
+                                <!-- Content text -->
+                                <div class="service-content-text">
+                                    <h4>Project skeleton</h4>
+                                    <p>Work always with a base skeleton. This skeleton will never contain business logic, but all what you'll need to deploy the project anywhere</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- Service Content Area -->
+                    <div class="col-12 col-sm-6 col-lg-4">
+                        <a href="course.html#docker-basics">
+                            <div class="service-content-area text-center mb-30 wow fadeInUp" data-wow-delay="300ms">
+                                <!-- Icon -->
+                                <div class="service-icon">
+                                    <i class="fab fa-docker"></i>
+                                </div>
+                                <!-- Content text -->
+                                <div class="service-content-text">
+                                    <h4>Docker basics</h4>
+                                    <p>We will learn all the needed docker skills you need to deploy your application. The course assumes that you already know what docker is and why we use it </p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- Service Content Area -->
+                    <div class="col-12 col-sm-6 col-lg-4">
+                        <a href="course.html#reactphp-server">
+                            <div class="service-content-area text-center mb-30 wow fadeInUp" data-wow-delay="300ms">
+                                <!-- Icon -->
+                                <div class="service-icon">
+                                    <i class="fa fa-server"></i>
+                                </div>
+                                <!-- Content text -->
+                                <div class="service-content-text">
+                                    <h4>ReactPHP Server</h4>
+                                    <p>Our project will run with ReactPHP as a Server. That will bring us deploy simplicity and an insane performance improvement.</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- Service Content Area -->
+                    <div class="col-12 col-sm-6 col-lg-4">
+                        <a href="course.html#domain-definition">
+                            <div class="service-content-area text-center mb-30 wow fadeInUp" data-wow-delay="300ms">
+                                <!-- Icon -->
+                                <div class="service-icon">
+                                    <i class="fa fa-project-diagram"></i>
+                                </div>
+                                <!-- Content text -->
+                                <div class="service-content-text">
+                                    <h4>Domain definition</h4>
+                                    <p>
+                                        Always with a simple but complete project in front of us, we will start looking at our model. In this part we will not load any external dependency like Redis or Mysql. Only our own classes. After this module, our project will be working properly without any persistence layer and completely synchronous.
+
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- Service Content Area -->
+                    <div class="col-12 col-sm-6 col-lg-4">
+                        <a href="course.html#io-dependencies">
+                            <div class="service-content-area text-center mb-30 wow fadeInUp" data-wow-delay="300ms">
+                                <!-- Icon -->
+                                <div class="service-icon">
+                                    <i class="fa fa-layer-group"></i>
+                                </div>
+                                <!-- Content text -->
+                                <div class="service-content-text">
+                                    <h4>I/O dependencies</h4>
+                                    <p>Once our project is properly working, then we'll add the persistence layers, like Redis or Mysql. We will see that adding tests coverage to these classes is extremely trivial and fast. We will see how easy is to change from one adapter to another. </p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- Service Content Area -->
+                    <div class="col-12 col-sm-6 col-lg-4">
+                        <a href="course.html#turning-asynchronous">
+                            <div class="service-content-area text-center mb-30 wow fadeInUp" data-wow-delay="300ms">
+                                <!-- Icon -->
+                                <div class="service-icon">
+                                    <i class="fa fa-refresh"></i>
+                                </div>
+                                <!-- Content text -->
+                                <div class="service-content-text">
+                                    <h4>Turning asynchronous</h4>
+                                    <p>Using asynchronous console consumers will help you to split, literally, between write and read operations. Even across different infrastructure elements. We will turn our application asynchronous, adding test coverage and some tips and tricks. </p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ***** Service Area End ***** -->
+
+
+        <!-- ***** Footer Area Start ***** -->
+        <footer class="footer-bottom-area section-padding-50">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="footer--content-text text-center">
+                            <div class="footer-social-icon d-flex align-items-center justify-content-center">
+                                <a href="https://twitter.com/mmoreram" data-toggle="tooltip" data-placement="top" title="Twitter"><i class="social_twitter"></i></a>
+                                <a href="https://www.linkedin.com/in/mmoreram/" data-toggle="tooltip" data-placement="top" title="Linkedin"><i class="social_linkedin"></i></a>
+                                <a href="https://www.youtube.com/channel/UC4GrdGq5JfI4tDmOuXViyxQ" data-toggle="tooltip" data-placement="top" title="Youtube"><i class="social_youtube"></i></a>
+                            </div>
+                            <p>Copyright ©2019 All rights reserved by <a href="#" target="_blank">Classy Theme</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- ***** Footer Area End ***** -->
+    </div>
+
+    <!-- All JavaScript Files -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bundle.js"></script>
+    <script src="js/active.js"></script>
+    <script src="js/stripe.js"></script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async
+            src="https://www.googletagmanager.com/gtag/js?id=UA-41917921-6"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'UA-41917921-6');
+    </script>
+
+    <script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/c11fd3061a6f0d72f6464d2f4/84ab7df037d8fdd3aad087ac6.js");</script>
+
+</body>
+
+</html>

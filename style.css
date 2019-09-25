@@ -51,10 +51,8 @@ Version: 1.0.0
 @import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap");
 @import url(css/bootstrap.min.css);
 @import url(css/animate.css);
-@import url(css/owl.carousel.min.css);
 @import url(css/magnific-popup.css);
 @import url(css/jquery.animatedheadline.css);
-@import url(css/font-awesome.min.css);
 @import url(css/style.css);
 /* Reboot CSS */
 * {
@@ -2114,3 +2112,40 @@ textarea.form-control {
     display: block;
     text-align: center;
     font-weight: 700; }
+
+
+  /* CUSTOM */
+.single-experience p {
+  margin-bottom: 5px!important;
+}
+
+.checkout-button {
+  background-color:#e1b12c;
+  color:#FFF;
+  padding:0 12px;
+  border:0;
+  border-radius:4px;
+  font-size:1em;
+}
+
+.checkout-button.sold-out {
+  background-color: #ff6848;
+}
+
+.fa-exclamation-triangle {
+  color: red;
+}
+
+p.alert-block {
+  padding-left: 20px;
+  border-left: red 10px solid;
+}
+
+p.info-block {
+  padding-left: 20px;
+  border-left: #e1b12c 10px solid;
+}
+
+.trainer-external-logo {
+  margin: 0 10px;
+}

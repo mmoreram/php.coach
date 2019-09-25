@@ -11,7 +11,7 @@
 
     <!-- Main Style -->
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="img/ico.ico" type="image/x-icon" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css">
 
     <!-- HTML Meta Tags -->
@@ -85,7 +85,7 @@
     <!-- ***** Header Area Start ***** -->
     <header class="header-area">
         <!-- Logo -->
-        <a href="#home" class="nav-brand"><img src="img/logo.png" alt="PHP Coach logo"></a>
+        <a href="/" class="nav-brand"><img src="img/logo.png" alt="PHP Coach logo"></a>
 
         <!-- Menu -->
         <div class="dornee-menu pl-5">
@@ -94,10 +94,10 @@
                     <li class="active"><a href="#home">Home</a></li>
                     <li><a href="#course-agenda">Course Agenda</a></li>
                     <li><a href="course.html"><span class="fa fa-book"></span>&nbsp;&nbsp; Detailed course</a></li>
-                    <li><a href="#next-sessions">Next Sessions</a></li>
+                    <li><a href="#next-sessions"><span class="fa fa-exclamation-triangle"></span>&nbsp;&nbsp; Next Sessions</a></li>
                     <li><a href="#companies-training">Companies Training</a></li>
-                    <li><a href="#about-the-trainer">About the trainer</a></li>
-                    <li><a href="#book-a-seat"><span class="fa fa-star"></span>&nbsp;&nbsp; Book a seat</a></li>
+                    <li><a href="#about-the-trainer"><span class="fa fa-user"></span>&nbsp;&nbsp; About the trainer</a></li>
+                    <li><a href="#contact"><span class="fa fa-envelope"></span>&nbsp;&nbsp; Contact</a></li>
                     <li><a href="https://github.com/mmoreram/php.coach/blob/master/index.html" target="_blank"><span class="fa fa-pencil-alt"></span>&nbsp;&nbsp; Edit this page</a></li>
                 </ul>
             </nav>
@@ -286,8 +286,13 @@
                                     <a href="https://www.wearemarketing.com/" target="_blank">We Are Marketing HQ</a>
                                     <a href="https://goo.gl/maps/V6MjygMWJ7DRyXCs9" class="ml-15" target="_blank"><span class="fa fa-map-marker"></span></a>
                                 </h6>
-                                <p>Early bird tickets <span class="price">( 250€ <i>VAT exc</i> )</span> available until September 13th</p>
-                                <p>Regular tickets <span class="price">( 400€ <i>VAT exc</i> )</span> available from September 13th - <a href="#book-a-seat">Book a seat</a></p>
+                                <p>Early bird tickets <span class="price">( 250€ <i>VAT exc</i> )</span> available until September 13th -
+                                    <button class="checkout-button sold-out" disabled>Sold out</button>
+                                </p>
+                                <p>Regular tickets <span class="price">( 400€ <i>VAT exc</i> )</span> available from September 13th -
+
+                                    <button class="checkout-button checkout-button-regular" role="link"><span class="fa fa-star"></span>&nbsp;&nbsp;Book a seat</button>
+                                </p>
                             </div>
 
                             <!-- Single Experience -->
@@ -298,17 +303,10 @@
                                     <a href="https://www.lifullconnect.com/" target="_blank">Lifull Connect HQ</a>
                                     <a href="https://goo.gl/maps/iNBpUVQjqFXSuMS37" class="ml-15" target="_blank"><span class="fa fa-map-marker"></span></a>
                                 </h6>
-                                <p>Early bird tickets <span class="price">( 250€ <i>VAT exc</i> )</span> available until Octuber 11th - <a href="#book-a-seat">Book a seat</a></p>
+                                <p>Early bird tickets <span class="price">( 250€ <i>VAT exc</i> )</span> available until Octuber 11th -
+                                    <button class="checkout-button checkout-button-regular" role="link"><span class="fa fa-star"></span>&nbsp;&nbsp;Book a seat</button>
+                                </p>
                                 <p>Regular tickets <span class="price">( 400€ <i>VAT exc</i> )</span> available from Octuber 11th
-                            </div>
-
-                            <!-- Single Experience -->
-                            <div class="single-experience wow fadeInUp" data-wow-delay="300ms">
-                                <h6 class="works-year">22-23 November, 2019</h6>
-                                <h4 class="designation">Bilbao (Spanish)</h4>
-                                <h6 class="company-name">To be decided</h6>
-                                <p>Early bird tickets <span class="price">( 250€ <i>VAT exc</i> )</span> available until November 1st - <a href="#book-a-seat">Book a seat</a></p>
-                                <p>Regular tickets <span class="price">( 400€ <i>VAT exc</i> )</span> available from November 1st
                             </div>
 
                             <!-- Single Experience -->
@@ -316,7 +314,9 @@
                                 <h6 class="works-year">13-14 December, 2019</h6>
                                 <h4 class="designation">Sevilla (Spanish)</h4>
                                 <h6 class="company-name">To be decided</h6>
-                                <p>Early bird tickets <span class="price">( 250€ <i>VAT exc</i> )</span> available until November 22th - <a href="#book-a-seat">Book a seat</a></p>
+                                <p>Early bird tickets <span class="price">( 250€ <i>VAT exc</i> )</span> available until November 22th -
+                                    <button class="checkout-button checkout-button-regular" role="link"><span class="fa fa-star"></span>&nbsp;&nbsp;Book a seat</button>
+                                </p>
                                 <p>Regular tickets <span class="price">( 400€ <i>VAT exc</i> )</span> available from November 22th
                             </div>
 
@@ -325,7 +325,9 @@
                                 <h6 class="works-year">20-21 December, 2019</h6>
                                 <h4 class="designation">Madrid (Spanish)</h4>
                                 <h6 class="company-name">To be decided</h6>
-                                <p>Early bird tickets <span class="price">( 250€ <i>VAT exc</i> )</span> available until November 29th - <a href="#book-a-seat">Book a seat</a></p>
+                                <p>Early bird tickets <span class="price">( 250€ <i>VAT exc</i> )</span> available until November 29th -
+                                    <button class="checkout-button checkout-button-regular" role="link"><span class="fa fa-star"></span>&nbsp;&nbsp;Book a seat</button>
+                                </p>
                                 <p>Regular tickets <span class="price">( 400€ <i>VAT exc</i> )</span> available from November 29th
                             </div>
 
@@ -334,7 +336,9 @@
                                 <h6 class="works-year">3-4 January, 2020</h6>
                                 <h4 class="designation">Paris (English)</h4>
                                 <h6 class="company-name">To be decided</h6>
-                                <p>Early bird tickets <span class="price">( 250€ <i>VAT exc</i> )</span> available until December 13th - <a href="#book-a-seat">Book a seat</a></p>
+                                <p>Early bird tickets <span class="price">( 250€ <i>VAT exc</i> )</span> available until December 13th -
+                                    <button class="checkout-button checkout-button-regular" role="link"><span class="fa fa-star"></span>&nbsp;&nbsp;Book a seat</button>
+                                </p>
                                 <p>Regular tickets <span class="price">( 400€ <i>VAT exc</i> )</span> available from December 13th
                             </div>
                         </div>
@@ -382,7 +386,7 @@
                                 <!-- Content text -->
                                 <div class="service-content-text">
                                     <h4>Your audience</h4>
-                                    <p>This course will be only for you. The course is available until 10 attendees</p>
+                                    <p>This course will be only for you. The course is available until 15 attendees</p>
                                 </div>
                             </div>
                         </a>
@@ -423,7 +427,7 @@
                         <div class="service-content-area text-center mb-30 wow fadeInUp" data-wow-delay="300ms">
                             <!-- Icon -->
                             <div class="service-icon">
-                                <i class="fa fa-money"></i>
+                                <i class="fa fa-credit-card"></i>
                             </div>
                             <!-- Content text -->
                             <div class="service-content-text">
@@ -456,7 +460,7 @@
                             <div class="service-content-area text-center mb-30 wow fadeInUp" data-wow-delay="300ms">
                                 <!-- Icon -->
                                 <div class="service-icon">
-                                    <i class="fa fa-handshake-o"></i>
+                                    <i class="fa fa-handshake"></i>
                                 </div>
                                 <!-- Content text -->
                                 <div class="service-content-text">
@@ -493,6 +497,9 @@
                             <p>Marc Morera is a long experienced PHP architect, author of multiple open source Github libraries and co-founder of some projects like Elcodi or Apisearch. </p>
                             <p>He has specialized specifically on making PHP applications faster, lighter and better by applying quite known pattern designs in a way that barely each developer can really understand. </p>
                             <p>At the moment he is spending his professional time by doing some trainings, tons of open source code and working in Apisearch as a side project. </p>
+                            <a href="https://twitter.com/mmoreram" target="_blank" class="trainer-external-logo"><span class="fab fa-twitter"></span></a>
+                            <a href="https://linkedin.com/in/mmoreram" target="_blank" class="trainer-external-logo"><span class="fab fa-linkedin-in"></span></a>
+                            <a href="https://mmoreram.com" target="_blank" class="trainer-external-logo"><span class="fa fa-home"></span></a>
                         </div>
                     </div>
 
@@ -508,13 +515,13 @@
 
 
         <!-- ***** Contact Area Start ***** -->
-        <section class="contact-me-area bg-white section-padding-100-0" id="book-a-seat">
+        <section class="contact-me-area bg-white section-padding-100-0" id="contact">
             <div class="container">
                 <div class="row">
                     <div class="col-12">
                         <!-- Section Title -->
                         <div class="section-title text-center wow fadeInUp" data-wow-delay="300ms">
-                            <h2>Book a seat</h2>
+                            <h2>Contact us</h2>
                         </div>
                     </div>
                 </div>
@@ -558,7 +565,7 @@
                                             <!-- Form Group -->
                                             <div class="col-12">
                                                 <div class="form-group" style="padding-left: 30px;">
-                                                    <input type="checkbox" class="form-control mb-30" name="group[24417][4]" id="group_3" checked> <span style="color: #717273; font-size: 16px;">I'm interested in the current course</span>
+                                                    <input type="checkbox" class="form-control mb-30" name="group[24417][4]" id="group_3"> <span style="color: #717273; font-size: 16px;">I'm interested in the current course</span>
                                                 </div>
                                             </div>
                                             <!-- Form Group -->
@@ -652,6 +659,8 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/bundle.js"></script>
     <script src="js/active.js"></script>
+    <script src="https://js.stripe.com/v3/"></script>
+    <script src="js/stripe.js"></script>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async
