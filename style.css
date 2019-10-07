@@ -2149,3 +2149,11 @@ p.info-block {
 .trainer-external-logo {
   margin: 0 10px;
 }
+
+.col-12 .service-content-area {
+  height: 95%;
+}
+
+.feedback {
+  color: goldenrod;
+}
