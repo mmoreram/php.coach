@@ -142,11 +142,9 @@
 
                         <ul>
                             <li><a href="https://git-scm.com/book/en/v2/Getting-Started-Installing-Git" target="_blank">Git instalado</a></li>
-                            <li><a href="https://docs.docker.com/install/" target="_blank">Docker</a> y <a href="https://docs.docker.com/compose/install/" target="_blank">Docker Compose</a> instalado</li>
-                            <li>Una cuenta abierta en <a href="https://circleci.com/signup/" target="_blank">CircleCI</a></li>
+                            <li><a href="https://docs.docker.com/install/" target="_blank">Docker</a> instalado</li>
                             <li><a href="https://www.tutorialspoint.com/apache_bench/apache_bench_environment_setup.htm" target="_blank">Apache Benchmark</a> instalado - apache-tools</li>
                             <li>PHP 7.3 instalado</li>
-                            <li>Nginx + PHP-FPM instalado</li>
                         </ul>
                     </div>
                 </div>
@@ -360,7 +358,6 @@
                             <li>Docker composer para testing</li>
                             <li>Crear un Dockerfile base</li>
                             <li>Nuestro primer maravilloso test `assertTrue(true)`</li>
-                            <li>Hagamos que todo funcione en CircleCI</li>
                         </ul>
                     </div>
                 </div>
@@ -503,8 +500,7 @@
                             Vamos a hacer que todo funcione correctamente añadiendo una
                             capa extra en nuestro proyecto, relativa a nuestras implementaciones
                             de I/O. En nuestro lenguaje, añadir adaptadores para nuestros
-                            repositorios, como el de Repositorio de User, o el de nuestra
-                            capa de caché en Redis.
+                            repositorios, como el de Repositorio de User.
                         </p>
 
                         <p>
@@ -520,10 +516,8 @@
 
                         <ul>
                             <li>Duración del bloque - <strong>3h</strong></li>
-                            <li>Adaptador Redis para la capa de caché</li>
                             <li>Adaptador Mysql para la capa de persistencia</li>
                             <li>Tests unitarios para los nuevos adaptadores</li>
-                            <li>Adaptación en docker para que los tests sigan funcionando en CircleCI</li>
                         </ul>
                     </div>
                 </div>
@@ -583,7 +577,6 @@
                             <li>Duración del bloque - <strong>3h</strong></li>
                             <li>Añadiendo un middleware de asíncronía para nuestras escrituras</li>
                             <li>Adaptador para RabbitMQ</li>
-                            <li>Añadiendo tests funcionales para nuestras escrituras</li>
                             <li>Completar Docker para que pueda trabajar con colas</li>
                         </ul>
                     </div>

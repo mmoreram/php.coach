@@ -136,11 +136,9 @@
 
                         <ul>
                             <li><a href="https://git-scm.com/book/en/v2/Getting-Started-Installing-Git" target="_blank">Git installed</a></li>
-                            <li><a href="https://docs.docker.com/install/" target="_blank">Docker</a> and <a href="https://docs.docker.com/compose/install/"  target="_blank">Docker Compose</a> installed</li>
-                            <li>An enabled account at <a href="https://circleci.com/signup/" target="_blank">CircleCI</a></li>
+                            <li><a href="https://docs.docker.com/install/" target="_blank">Docker</a> installed</li>
                             <li><a href="https://www.tutorialspoint.com/apache_bench/apache_bench_environment_setup.htm" target="_blank">Apache Benchmark</a> installed - apache-tools</li>
                             <li>PHP 7.3 installed</li>
-                            <li>Nginx + PHP-FPM installed</li>
                         </ul>
                     </div>
                 </div>
@@ -350,7 +348,6 @@
                             <li>Docker composer for testing</li>
                             <li>Creating a base Dockerfile</li>
                             <li>Our first priceless `assertTrue(true)` test</li>
-                            <li>Make everything run inside CircleCI</li>
                         </ul>
                     </div>
                 </div>
@@ -484,8 +481,7 @@
                         <p>
                             So let's make it work properly by adding an extra layer in our
                             project related to I/O operations. In our language, adding some
-                            repository implementations, like the User storage one, or the
-                            Redis one for our cache.
+                            repository implementations, like the User storage one.
                         </p>
 
                         <p>
@@ -500,10 +496,8 @@
 
                         <ul>
                             <li>Block duration - <strong>3h</strong></li>
-                            <li>Redis adapter for our cache layer</li>
                             <li>Mysql adapter for our persistence layer</li>
                             <li>Unit testing of new adapters</li>
-                            <li>Docker adaptation to make tests still work on CircleCI</li>
                         </ul>
                     </div>
                 </div>
@@ -562,7 +556,6 @@
                             <li>Block duration - <strong>2h</strong></li>
                             <li>Adding asynchronous middleware for our write operations </li>
                             <li>RabbitMQ adapter</li>
-                            <li>Adding functional testing coverage for our asynchronous writes</li>
                             <li>Turn Docker queues friendly</li>
                         </ul>
                     </div>
