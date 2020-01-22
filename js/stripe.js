@@ -29,13 +29,13 @@
     });
 
 
-    var checkoutButtonsRegular = document.getElementsByClassName('checkout-button-regular');
+    var checkoutButtonsRegular = document.getElementsByClassName('checkout-button-early-eu');
     Array.prototype.forEach.call(checkoutButtonsRegular, function(button) {
         button.addEventListener('click', function () {
             // When the customer clicks on the button, redirect
             // them to Checkout.
             stripe.redirectToCheckout({
-                items: [{sku: 'sku_FsPrnEG4pZZACP', quantity: 1}],
+                items: [{sku: 'sku_Gap9HtQBY1jCvP', quantity: 1}],
 
                 // Do not rely on the redirect to the successUrl for fulfilling
                 // purchases, customers may not always reach the success_url after
