@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="In this two days long face-to-face course we will learn how to craft a PHP microservice from the scratch, by using CQRS, ReactPHP and Docker">
+    <meta name="description" content="In this course we will learn how to craft a PHP service from the scratch, by using Domain events, CQRS, ReactPHP and Docker">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="author" content="Marc Morera - PHP Coach">
     <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
@@ -28,26 +28,26 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css">
 
     <!-- HTML Meta Tags -->
-    <title>PHP Coach Course - Microservices in PHP</title>
-    <meta name="description" content="In this two days long face-to-face course we will learn how to craft a PHP microservice from the scratch, by using CQRS, ReactPHP and Docker">
+    <title>PHP Coach Course - Event-Driven in PHP</title>
+    <meta name="description" content="In this course we will learn how to craft a PHP service from the scratch, by using Domain events, CQRS, ReactPHP and Docker">
 
     <!-- Google / Search Engine Tags -->
-    <meta itemprop="name" content="PHP Coach Course - Microservices in PHP">
-    <meta itemprop="description" content="In this two days long face-to-face course we will learn how to craft a PHP microservice from the scratch, by using CQRS, ReactPHP and Docker">
-    <meta itemprop="image" content="http://php.coach/img/microservices-on-php.png">
+    <meta itemprop="name" content="PHP Coach Course - Event-Driven in PHP">
+    <meta itemprop="description" content="In this course we will learn how to craft a PHP service from the scratch, by using Domain events, CQRS, ReactPHP and Docker">
+    <meta itemprop="image" content="http://php.coach/img/event-driven-in-php.png">
 
     <!-- Facebook Meta Tags -->
     <meta property="og:url" content="https://php.coach">
     <meta property="og:type" content="website">
-    <meta property="og:title" content="PHP Coach Course - Microservices in PHP">
-    <meta property="og:description" content="In this two days long face-to-face course we will learn how to craft a PHP microservice from the scratch, by using CQRS, ReactPHP and Docker">
-    <meta property="og:image" content="http://php.coach/img/microservices-on-php.png">
+    <meta property="og:title" content="PHP Coach Course - Event-Driven in PHP">
+    <meta property="og:description" content="In this course we will learn how to craft a PHP service from the scratch, by using Domain events, CQRS, ReactPHP and Docker">
+    <meta property="og:image" content="http://php.coach/img/event-driven-in-php.png">
 
     <!-- Twitter Meta Tags -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="PHP Coach Course - Microservices in PHP">
-    <meta name="twitter:description" content="In this two days long face-to-face course we will learn how to craft a PHP microservice from the scratch, by using CQRS, ReactPHP and Docker">
-    <meta name="twitter:image" content="http://php.coach/img/microservices-on-php.png">
+    <meta name="twitter:title" content="PHP Coach Course - Event-Driven in PHP">
+    <meta name="twitter:description" content="In this course we will learn how to craft a PHP service from the scratch, by using Domain events, CQRS, ReactPHP and Docker">
+    <meta name="twitter:image" content="http://php.coach/img/event-driven-in-php.png">
 
     <style>
         .service-content-area:hover a {
@@ -55,24 +55,9 @@
             font-weight: bold;
         }
 
-        .tool {
-            text-align: center;
-            font-size: 3em;
-            margin-bottom: 50px;
-        }
-
-        .tool img {
-            height: 1em;
-            width: 1em;
-        }
-
         .price {
             color: deepskyblue;
             font-style: italic;
-        }
-
-        .fa-bell {
-            color: red;
         }
 
         .alt-btn {
@@ -143,9 +128,8 @@
                         <!-- Welcome Content -->
                         <div class="welcome-content text-center wow fadeInUp" data-wow-delay="300ms">
                             <img src="img/logo.png" width="40%" alt="PHP Coach logo" class="mb-30" />
-                            <h2>Microservices in PHP Course</h2>
-                            <p>Start building insane PHP microservices with this 2 days course.</p>
-                            <p><span class="fa fa-bell"></span>&nbsp;&nbsp;ReactPHP Edition now Available!</p>
+                            <h2>Event-Driven in PHP</h2>
+                            <p>Build an insane PHP application on top of ReactPHP, CQRS and Domain Events</p>
                             <a href="#course-agenda" class="btn dornee-btn mt-30">View course</a>
                             <a href="course.html" class="btn dornee-btn alt-btn mt-30">Detailed course - EN</a>
                             <a href="course.es.html" class="btn dornee-btn alt-btn mt-30">Curso detallado - ES</a>
@@ -184,7 +168,7 @@
                                 <!-- Content text -->
                                 <div class="service-content-text">
                                     <h4>Project skeleton</h4>
-                                    <p>Work always with a base skeleton. This skeleton will never contain business logic, but all what you'll need to deploy the project anywhere</p>
+                                    <p>Basics of DriftPHP, the PHP Framework on top of Symfony and ReactPHP components.</p>
                                 </div>
                             </div>
                         </a>
@@ -201,7 +185,7 @@
                                 <!-- Content text -->
                                 <div class="service-content-text">
                                     <h4>Docker basics</h4>
-                                    <p>We will learn all the needed docker skills you need to deploy your application. The course assumes that you already know what docker is and why we use it </p>
+                                    <p>We will learn all the needed docker skills you need to deploy your application. The course assumes that you already know what docker is and why we use it.</p>
                                 </div>
                             </div>
                         </a>
@@ -209,16 +193,16 @@
 
                     <!-- Service Content Area -->
                     <div class="col-12 col-sm-6 col-lg-4">
-                        <a href="course.html#reactphp-server">
+                        <a href="course.html#reactphp-fundamentals">
                             <div class="service-content-area text-center mb-30 wow fadeInUp" data-wow-delay="300ms">
                                 <!-- Icon -->
                                 <div class="service-icon">
-                                    <i class="fa fa-server"></i>
+                                    <i class="fa fa-sync"></i>
                                 </div>
                                 <!-- Content text -->
                                 <div class="service-content-text">
-                                    <h4>ReactPHP Server</h4>
-                                    <p>Our project will run with ReactPHP as a Server. That will bring us deploy simplicity and an insane performance improvement.</p>
+                                    <h4>ReactPHP fundamentals</h4>
+                                    <p>In order to understand how asynchronous programming works in PHP, is a must to understand properly how ReactPHP works under the hood.</p>
                                 </div>
                             </div>
                         </a>
@@ -263,7 +247,7 @@
 
                     <!-- Service Content Area -->
                     <div class="col-12 col-sm-6 col-lg-4">
-                        <a href="course.html#turning-asynchronous">
+                        <a href="course.html#turning-event-driven">
                             <div class="service-content-area text-center mb-30 wow fadeInUp" data-wow-delay="300ms">
                                 <!-- Icon -->
                                 <div class="service-icon">
@@ -271,30 +255,11 @@
                                 </div>
                                 <!-- Content text -->
                                 <div class="service-content-text">
-                                    <h4>Turning asynchronous</h4>
-                                    <p>Using asynchronous console consumers will help you to split, literally, between write and read operations. Even across different infrastructure elements. We will turn our application asynchronous, adding test coverage and some tips and tricks. </p>
+                                    <h4>Turning event-driven</h4>
+                                    <p>What about turning our whole application exclusively reactive on top of domain events? How much do you think we could improve it? This chapter will, literally, blow your mind.</p>
                                 </div>
                             </div>
                         </a>
-                    </div>
-
-
-                    <!-- Service Content Area -->
-                    <div class="col-12">
-                        <div class="service-content-area text-center mb-30 wow fadeInUp" data-wow-delay="300ms">
-                            <!-- Icon -->
-                            <div class="service-icon">
-                                <i class="fa fa-sync"></i>
-                            </div>
-                            <!-- Content text -->
-                            <div class="service-content-text">
-                                <h4><span class="fa fa-bell"></span>&nbsp;&nbsp;ReactPHP Edition</h4>
-                                <p>
-                                    This course is also available on top of ReactPHP. The skeleton of the course is exactly the same than the regular one, but the main difference is that, instead of working on top of Symfony as a Framework, we will work on top of <a href="https://driftphp.io">DriftPHP</a><br>
-                                    In this course modality, we will train everything around promises and event loops. We will use the default DriftPHP server instead of using PHP-PM and we will use some libraries to keep testing our domain, even we build it on top of ReactPHP.
-                                </p>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -319,43 +284,40 @@
 
                             <!-- Single Experience -->
                             <div class="single-experience wow fadeInUp" data-wow-delay="300ms">
-                                <h6 class="works-year">3-4 Abril, 2020</h6>
-                                <h4 class="designation">Madrid (Spanish) - <span class="fa fa-bell"></span>&nbsp;&nbsp;ReactPHP Edition</h4>
-                                <h6 class="company-name">To be decided</h6>
-                                <p>Schedule - <i>Both days, from 9.00 to 18.30</i></p>
-                                <p>Early bird tickets - <strong>250€</strong> <span class="price">(52.5€ VAT exc)</span>&nbsp;&nbsp;-
-                                    <button class="checkout-button checkout-button-early" role="link"><span class="fa fa-star"></span>&nbsp;&nbsp;Book a seat</button>
+                                <h4 class="works-year">July, 2020 (Spanish) - Online</h4>
+                                <p>Schedule (CEST) - 16h<br>
+                                    From <strong>20 July to 23 July</strong>, from <strong>17.00 to 19.00h</strong><br>
+                                    From <strong>27 July to 30 July</strong>, from <strong>17.00 to 19.00h</strong>
+                                </p>
+                                <p>Online tickets (max 15 attendees) - <strong>200€</strong> <span class="price">(42€ VAT exc)</span>&nbsp;&nbsp;-
+                                    <button class="checkout-button checkout-button-online" role="link"><span class="fa fa-star"></span>&nbsp;&nbsp;Book a seat</button>
                                 </p>
                             </div>
 
                             <!-- Single Experience -->
                             <div class="single-experience wow fadeInUp" data-wow-delay="300ms">
-                                <h6 class="works-year">17-18 Abril, 2020</h6>
-                                <h4 class="designation">Valencia (Spanish) - <span class="fa fa-bell"></span>&nbsp;&nbsp;ReactPHP Edition</h4>
-                                <h6 class="company-name">To be decided</h6>
-                                <p>Schedule - <i>Both days, from 9.00 to 18.30</i></p>
-                                <p>Early bird tickets - <strong>250€</strong> <span class="price">(52.5€ VAT exc)</span>&nbsp;&nbsp;-
-                                    <button class="checkout-button checkout-button-early" role="link"><span class="fa fa-star"></span>&nbsp;&nbsp;Book a seat</button>
+                                <h4 class="works-year">August, 2020 (Spanish) - Online</h4>
+                                <p>Schedule (CEST) - 16h<br>
+                                    From <strong>10 July to 13 July</strong>, from <strong>17.00 to 19.00h</strong><br>
+                                    From <strong>17 July to 20 July</strong>, from <strong>17.00 to 19.00h</strong>
+                                </p>
+                                <p>Online tickets (max 15 attendees) - <strong>200€</strong> <span class="price">(42€ VAT exc)</span>&nbsp;&nbsp;-
+                                    <button class="checkout-button checkout-button-online" role="link"><span class="fa fa-star"></span>&nbsp;&nbsp;Book a seat</button>
                                 </p>
                             </div>
 
                             <!-- Single Experience -->
                             <div class="single-experience wow fadeInUp" data-wow-delay="300ms">
-                                <h6 class="works-year">24-25 Abril, 2020</h6>
-                                <h4 class="designation">Paris (English)</h4>
-                                <h6 class="company-name">To be decided</h6>
-                                <p>Schedule - <i>Both days, from 9.00 to 18.30</i></p>
-                                <p>Early bird tickets - <strong>350€</strong> <span class="price">(73.5€ VAT exc)</span>&nbsp;&nbsp;-
-                                    <button class="checkout-button checkout-button-early-eu" role="link"><span class="fa fa-star"></span>&nbsp;&nbsp;Book a seat</button>
+                                <h4 class="works-year">September, 2020 (English) - Online</h4>
+                                <p>Schedule (CEST) - 16h<br>
+                                    From <strong>7 July to 10 July</strong>, from <strong>17.00 to 19.00h</strong><br>
+                                    From <strong>14 July to 17 July</strong>, from <strong>17.00 to 19.00h</strong>
+                                </p>
+                                <p>Online tickets (max 15 attendees) - <strong>200€</strong> <span class="price">(42€ VAT exc)</span>&nbsp;&nbsp;-
+                                    <button class="checkout-button checkout-button-online" role="link"><span class="fa fa-star"></span>&nbsp;&nbsp;Book a seat</button>
                                 </p>
                             </div>
 
-                            <!-- Single Experience -->
-                            <div class="single-experience wow fadeInUp" data-wow-delay="300ms">
-                                <h6 class="works-year">Soon, 2020</h6>
-                                <h4 class="designation">Barcelona (Spanish) - <span class="fa fa-bell"></span>&nbsp;&nbsp;ReactPHP Edition</h4>
-                                <h6 class="company-name">To be decided</h6>
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -494,8 +456,8 @@
                             </div>
                             <!-- Content text -->
                             <div class="service-content-text">
-                                <h4>In your offices</h4>
-                                <p>Your employees will be able to work with their computers, so the course will be in your own offices</p>
+                                <h4>In your offices / Online</h4>
+                                <p>Your employees will be able to work with their computers, so the course will be in your own offices or at home</p>
                             </div>
                         </div>
                     </div>
@@ -641,7 +603,7 @@
                             <h4>Marc Morera</h4>
                             <p>Marc Morera is a long experienced PHP architect, author of multiple open source Github libraries and co-founder of some projects like Elcodi or Apisearch. </p>
                             <p>He has specialized specifically on making PHP applications faster, lighter and better by applying quite known pattern designs in a way that barely each developer can really understand. </p>
-                            <p>At the moment he is spending his professional time by doing some trainings, tons of open source code and working in Apisearch as a side project. </p>
+                            <p>At the moment he is spending his professional time by doing some trainings, tons of open source code and working in Apisearch and DriftPHP as a side project. </p>
                             <a href="https://twitter.com/mmoreram" target="_blank" class="trainer-external-logo"><span class="fab fa-twitter"></span></a>
                             <a href="https://linkedin.com/in/mmoreram" target="_blank" class="trainer-external-logo"><span class="fab fa-linkedin-in"></span></a>
                             <a href="https://mmoreram.com" target="_blank" class="trainer-external-logo"><span class="fa fa-home"></span></a>

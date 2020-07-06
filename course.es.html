@@ -27,26 +27,26 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css">
 
     <!-- HTML Meta Tags -->
-    <title>Curso PHP Coach - Microservices en PHP</title>
-    <meta name="description" content="En este curso presencial de 2 dias, aprenderemos como hacer un microservicio en PHP, utilizando CQRS, ReactPHP y Docker">
+    <title>PHP Coach Course - Event-Driven en PHP</title>
+    <meta name="description" content="En este curso aprenderás como hacer un servicio en PHP, utilizando Eventos de dominio, CQRS, ReactPHP y Docker">
 
     <!-- Google / Search Engine Tags -->
-    <meta itemprop="name" content="Curso PHP Coach - Microservices en PHP">
-    <meta itemprop="description" content="En este curso presencial de 2 dias, aprenderemos como hacer un microservicio en PHP, utilizando CQRS, ReactPHP y Docker">
-    <meta itemprop="image" content="http://php.coach/img/microservices-on-php.png">
+    <meta itemprop="name" content="Curso PHP Coach - Event-Driven en PHP">
+    <meta itemprop="description" content="En este curso aprenderás como hacer un servicio en PHP, utilizando Eventos de dominio, CQRS, ReactPHP y Docker">
+    <meta itemprop="image" content="http://php.coach/img/event-driven-in-php.png">
 
     <!-- Facebook Meta Tags -->
     <meta property="og:url" content="https://php.coach/course.es.html">
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Curso PHP Coach - Microservices en PHP">
-    <meta property="og:description" content="En este curso presencial de 2 dias, aprenderemos como hacer un microservicio en PHP, utilizando CQRS, ReactPHP y Docker">
-    <meta property="og:image" content="http://php.coach/img/microservices-on-php.png">
+    <meta property="og:title" content="Curso PHP Coach - Event-Driven en PHP">
+    <meta property="og:description" content="En este curso aprenderás como hacer un servicio en PHP, utilizando Eventos de dominio, CQRS, ReactPHP y Docker">
+    <meta property="og:image" content="http://php.coach/img/event-driven-in-php.png">
 
     <!-- Twitter Meta Tags -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Curso PHP Coach - Microservices en PHP">
-    <meta name="twitter:description" content="En este curso presencial de 2 dias, aprenderemos como hacer un microservicio en PHP, utilizando CQRS, ReactPHP y Docker">
-    <meta name="twitter:image" content="http://php.coach/img/microservices-on-php.png">
+    <meta name="twitter:title" content="Curso PHP Coach - Event-Driven en PHP">
+    <meta name="twitter:description" content="En este curso aprenderás como hacer un servicio en PHP, utilizando Eventos de dominio, CQRS, ReactPHP y Docker">
+    <meta name="twitter:image" content="http://php.coach/img/event-driven-in-php.png">
 
     <style>
         .service-content-area:hover a {
@@ -91,10 +91,10 @@
                     <li><a href="#requisites"><span class="fa fa-exclamation-triangle"></span>&nbsp;&nbsp;Requisitos</a></li>
                     <li><a href="#skeleton"><span class="fa fa-skull"></span>&nbsp;&nbsp;Estructura</a></li>
                     <li><a href="#docker-basics"><span class="fab fa-docker"></span>&nbsp;&nbsp;Básicos en Docker</a></li>
-                    <li><a href="#reactphp-server"><span class="fa fa-server"></span>&nbsp;&nbsp;Servidor en ReactPHP</a></li>
+                    <li><a href="#reactphp-fundamentals"><span class="fa fa-server"></span>&nbsp;&nbsp;Fundamentos de ReactPHP</a></li>
                     <li><a href="#domain-definition"><span class="fa fa-project-diagram"></span>&nbsp;&nbsp;Definición del Dominio</a></li>
                     <li><a href="#io-dependencies"><span class="fa fa-layer-group"></span>&nbsp;&nbsp;Dependencias de I/O</a></li>
-                    <li><a href="#turning-asynchronous"><span class="fa fa-cogs"></span>&nbsp;&nbsp;Cambiando a Asíncrono</a></li>
+                    <li><a href="#turning-event-driven"><span class="fa fa-cogs"></span>&nbsp;&nbsp;Eventos de Dominio</a></li>
                     <li><a href="/"><span class="fa fa-step-backward"></span>&nbsp;&nbsp;Principal</a></li>
                 </ul>
             </nav>
@@ -149,17 +149,11 @@
                             We have available some translations for this content - <a href="course.html">English version</a>
                         </p>
 
-                        <p class="alert-block">
-                            <strong>Atención</strong>. Este curso es bonificable mediante Fundae, anteriormente
-                            llamada Tripartita. Ponte en contacto con nosotros para más
-                            información.
-                        </p>
-
                         <ul>
                             <li><a href="https://git-scm.com/book/en/v2/Getting-Started-Installing-Git" target="_blank">Git instalado</a></li>
                             <li><a href="https://docs.docker.com/install/" target="_blank">Docker</a> instalado</li>
                             <li><a href="https://www.tutorialspoint.com/apache_bench/apache_bench_environment_setup.htm" target="_blank">Apache Benchmark</a> instalado - apache-tools</li>
-                            <li>PHP 7.3 instalado</li>
+                            <li>PHP 7.3 instalado (requerimiento mínimo)</li>
                         </ul>
                     </div>
                 </div>
@@ -191,7 +185,7 @@
                                 <!-- Content text -->
                                 <div class="service-content-text">
                                     <h4>Estructura del proyecto</h4>
-                                    <p>Trabaja siempre con una estructura base. Esta estructura nunca tendrá partes de tu lógica de negocio, pero tendrá lo necesario para que puedas deployar tu proyecto en cualquier sitio</p>
+                                    <p>Principios básicos de DriftPHP, el framework PHP para trabajar con los componentes de ReactPHP y de Symfony.</p>
                                 </div>
                             </div>
                         </a>
@@ -216,7 +210,7 @@
 
                     <!-- Service Content Area -->
                     <div class="col-12 col-sm-6 col-lg-4">
-                        <a href="#reactphp-server">
+                        <a href="#reactphp-fundamentals">
                             <div class="service-content-area text-center mb-30 wow fadeInUp" data-wow-delay="300ms">
                                 <!-- Icon -->
                                 <div class="service-icon">
@@ -224,8 +218,8 @@
                                 </div>
                                 <!-- Content text -->
                                 <div class="service-content-text">
-                                    <h4>Servidor en ReactPHP</h4>
-                                    <p>Nuestro proyecto funcionará con ReactPHP en la parte del servidor. Esto nos proporcionará mucha simplicidad a la hora de deployar, y una gran mejora a nivel de performance</p>
+                                    <h4>Fundamentos de ReactPHP</h4>
+                                    <p>Para entender correctamente cómo funciona la programación asíncrona en PHP, antes necesitamos aprender cómo funciona ReactPHP internamente.</p>
                                 </div>
                             </div>
                         </a>
@@ -267,7 +261,7 @@
 
                     <!-- Service Content Area -->
                     <div class="col-12 col-sm-6 col-lg-4">
-                        <a href="#turning-asynchronous">
+                        <a href="#turning-event-driven">
                             <div class="service-content-area text-center mb-30 wow fadeInUp" data-wow-delay="300ms">
                                 <!-- Icon -->
                                 <div class="service-icon">
@@ -275,30 +269,11 @@
                                 </div>
                                 <!-- Content text -->
                                 <div class="service-content-text">
-                                    <h4>Cambiando a Asíncrono</h4>
-                                    <p>Utilizar consumidores asíncronos nos permitirá, literalmente, separar nuestras lecturas y escrituras de una forma física. Incluso entre distintos nodos en nuestra infrastructura. Vamos a transformar nuestra aplicación en asíncrona, añadiendo test coverage y algunos trucos y consejos</p>
+                                    <h4>Eventos de dominio</h4>
+                                    <p>Y si transformamos nuestra aplicación entera para que trabaje con eventos de dominio? Cuánto creéis que podrá mejorar? Este capítulo, literalmente, te fascinará.</p>
                                 </div>
                             </div>
                         </a>
-                    </div>
-
-
-                    <!-- Service Content Area -->
-                    <div class="col-12">
-                        <div class="service-content-area text-center mb-30 wow fadeInUp" data-wow-delay="300ms">
-                            <!-- Icon -->
-                            <div class="service-icon">
-                                <i class="fa fa-sync"></i>
-                            </div>
-                            <!-- Content text -->
-                            <div class="service-content-text">
-                                <h4><span class="fa fa-bell"></span>&nbsp;&nbsp;Edición ReactPHP</h4>
-                                <p>
-                                    Este curso también está disponible en modalidad ReactPHP. El temario será exactamente el mismo que el regular, siendo la principal diferencia el hecho de que, como framework, se utilizará <a href="https://driftphp.io">DriftPHP</a> en lugar de Symfony.<br>
-                                    En esta modalidad, trabajaremos todo lo que hay alrededor de las promesas y los event loop. Utilizaremos el servidor que viene por defecto en DriftPHP en lugar de PHP-PM y utilizaremos algunas librerías para testear nuestro dominio, aún estando hecho con ReactPHP.
-                                </p>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -327,26 +302,27 @@
                             por construir lo que será el esqueleto de nuestra aplicación.
                             ¿Qué necesitamos para empezar desde cero un proyecto donde,
                             nuestra lógica de negocio, será implementada alrededor
-                            de una arquitectura CQRS, y donde, es posible que en un
-                            futuro, pase a ser código non-blocking y asíncrono?
+                            de una arquitectura CQRS y Event-Driven?
                             ¿Cuales son las librerías que <strong>realmente</strong>
                             vamos a necesitar para empezar con un repositorio lo más
                             ligero posible?
                         </p>
 
                         <p>
-                            En este capítulo exploraremos la base del proyecto, no tan
-                            solo en la parte teórica, sino también en la parte práctica.
+                            En este capítulo exploraremos los principios de DriftPHP,
+                            un nuevo framework construido con los componentes de Symfony
+                            y ReactPHP. Conoceremos los componentes del framework así
+                            como sus posibles usos.
                         </p>
 
                         <ul>
                             <li>Duración del bloque - <strong>3h</strong></li>
                             <li>Definición de capas</li>
-                            <li>Instalamos Symfony4. El framework funcionará, solamente, como un punto de entrada</li>
+                            <li>Instalamos DriftPHP. Arquitectura y fundamentos.</li>
                             <li>Command Bus como el elemento core del proyecto</li>
                             <li>Commands, command handlers y middlewares</li>
                             <li>Nuestro primer <i>Hello world</i> utilizando CQRS</li>
-                            <li>Soporte en servidor por parte de Nginx + PHP-FPM</li>
+                            <li>Soporte en servidor por parte de DriftPHP. Server + Watcher</li>
                             <li>Un poco de benchmarking con AB</li>
                         </ul>
                     </div>
@@ -387,11 +363,10 @@
                         </p>
 
                         <ul>
-                            <li>Duración del bloque - <strong>3h</strong></li>
+                            <li>Duración del bloque - <strong>2h</strong></li>
                             <li>Elementos necesarios de Docker</li>
                             <li>Docker composer para testing</li>
                             <li>Crear un Dockerfile base</li>
-                            <li>Nuestro primer maravilloso test `assertTrue(true)`</li>
                         </ul>
                     </div>
                 </div>
@@ -400,13 +375,13 @@
         <!-- ***** Service Area End ***** -->
 
         <!-- ***** Service Area Start ***** -->
-        <section class="point-zone clearfix mt-50 mb-50" id="reactphp-server">
+        <section class="point-zone clearfix mt-50 mb-50" id="reactphp-fundamentals">
             <div class="container">
                 <div class="row">
                     <div class="col-12">
                         <!-- Section Title -->
                         <div class="section-title text-center wow fadeInUp" data-wow-delay="300ms">
-                            <h2><span class="fa fa-server"></span>&nbsp;&nbsp;Servidor en ReactPHP</h2>
+                            <h2><span class="fa fa-server"></span>&nbsp;&nbsp;Fundamentos de ReactPHP</h2>
                         </div>
                     </div>
                 </div>
@@ -414,35 +389,29 @@
                 <div class="row">
                     <div class="col-12">
                         <p>
-                            ¿Cuan rápido puede responder tu servicio? Son los servidores
-                            tradicionales como Nginx o Apache la forma más óptima
-                            de deployar tus servicios en PHP, o podemos encontrar fórmulas
-                            un poco más eficientes que hagan que la performance de
-                            estos sean aún mucho mejor?
+                            Trabajar con ReactPHP es una experiencia completamente nueva
+                            si nunca has trabajado con un Event-Loop o una Promesa. Las
+                            cosas suceden eventualmente, y precisamente esto te fuerza
+                            a cambiar tu mentalidad sobre como programar tus servicios.
                         </p>
 
                         <p>
-                            Este puede que sea una de las preguntas más formuladas
-                            entre los desarrolladores web desde el principio de los
-                            tiempos. Y aquí tenemos mucho tema del que hablar, básicamente
-                            porque parece que las cosas pueden ir más rápidas...
-                            <strong>MUCHO</strong> más rápidas utilizando otras
-                            tecnologías como PHP-PM o utilizando un poco más al detalle
-                            nuestro gran amigo ReactPHP.
+                            DriftPHP, por primera vez en un framework PHP, te permite
+                            trabajar con Responses de ReactPHP. Esto te permitirá
+                            aplicar todos los conceptos de asincronía en ty dominio de una forma
+                            que nunca antes habrías visto.
                         </p>
 
                         <p>
-                            El objetivo de este capítulo será hacer un pequeño viaje
-                            por todos los servidores PHP, desde el ya conocido y
-                            estable en producción Nginx con PHP-FPM, hasta el nuevo
-                            monothread y blocking ReactPHP server.
+                            Tras este bloque, entenderás todos los fundamentos de ReactPHP, una parte
+                            esencial del curso.
                         </p>
 
                         <ul>
-                            <li>Duración del bloque - <strong>2h</strong></li>
-                            <li>Primer análisis a PHP-PM</li>
-                            <li>Primer análisis al servidor de ReactPHP</li>
-                            <li>Benchmarking & discusión</li>
+                            <li>Duración del bloque - <strong>3h</strong></li>
+                            <li>¿Qué es un event-loop?</li>
+                            <li>¿Qué es una promesa?</li>
+                            <li>¿Qué es un stream?</li>
                         </ul>
                     </div>
                 </div>
@@ -549,7 +518,7 @@
                         </p>
 
                         <ul>
-                            <li>Duración del bloque - <strong>3h</strong></li>
+                            <li>Duración del bloque - <strong>2h</strong></li>
                             <li>Adaptador Mysql para la capa de persistencia</li>
                             <li>Tests unitarios para los nuevos adaptadores</li>
                         </ul>
@@ -560,13 +529,13 @@
         <!-- ***** Service Area End ***** -->
 
 
-        <section class="point-zone bg-gray clearfix pb-5 pt-5" id="turning-asynchronous">
+        <section class="point-zone bg-gray clearfix pb-5 pt-5" id="turning-event-driven">
             <div class="container">
                 <div class="row">
                     <div class="col-12">
                         <!-- Section Title -->
                         <div class="section-title text-center wow fadeInUp" data-wow-delay="300ms">
-                            <h2><span class="fa fa-sync"></span>&nbsp;&nbsp;Cambiando a Asíncrono</h2>
+                            <h2><span class="fa fa-sync"></span>&nbsp;&nbsp;Eventos de dominio</h2>
                         </div>
                     </div>
                 </div>
@@ -574,44 +543,32 @@
                 <div class="row">
                     <div class="col-12">
                         <p>
-                            Este es el último paso, aunque no el menos importante.
-                            ¿Cómo podemos mejorar el servicio, haciendo que nuestras
-                            escrituras sean asíncronas? ¿Podemos posponer algunas acciones
-                            como añadir un nuevo usuario, y persistir dichas acciones
-                            cuando el servidor no esté tan ocupado?
+                            Tras estos últimos 5 capítulos, tendremos un servicio funcionando
+                            perfectamente en ReactPHP, con algunas implementaciones de repositorio
+                            testeadas y con algunos benchmarks ejecutados que nos demostrarán que,
+                            sin lugar a duda, hemos experimentado una mejora de performance sustancial
+                            con respecto a servicios a los que estamos acostumbrados.
                         </p>
 
                         <p>
-                            Cuando creas un nuevo microservicio, una de las opciones
-                            que siempre deberías valorar es que, eventualmente, puedes
-                            tener una carga muy alta de requests. Las lecturas, claro,
-                            tienen que ser síncronas, pero qué pasa con las escrituras?
-                            Podemos añadir algunas colas y consumir los mensajes en
-                            paralelo, haciendo parte del trabajo del servidor?
-                            Esto haría nuestro servicio un poco más rápido, verdad?
+                            Aún así, lo podemos hacer mejor. Mucho mejor. <strong>Increiblemente mejor</strong>
                         </p>
 
                         <p>
-                            Utilizaremos RabbitMQ para dicha cuestión, añadiendo algunas
-                            clases en nuestra arquitectura CQRS que harán las maravillas
-                            de los más incrédulos.
-                        </p>
-
-                        <p>
-                            Después de este capítulo, tendremos una aplicación hecha en
-                            Symfony4 utilizando un servidor ReactPHP, CQRS como nuestro
-                            patrón de arquitectura base y algunos conceptos del que
-                            se conoce como SOLID. Pequeñas clases, pequeñas funcionalidades y un
-                            repositorio con el que trabajarás estupendamente.
-
-                            Este es el trato.
+                            Este capítulo final hará que te estalle la cabeza, pues empezaremos a trabajar
+                            con eventos de dominio, y precisamente gracias a las features que ReactPHP nos
+                            brinda en términos de asincronía y non-blocking, podremos convertir nuestro servicio
+                            en algo mucho más escalable, desacoplándolo muchísimo más de la infrastructura y
+                            decrementando nuestros tiempos de respuesta y uso de recursos por enésima vez.
                         </p>
 
                         <ul>
                             <li>Duración del bloque - <strong>3h</strong></li>
-                            <li>Añadiendo un middleware de asíncronía para nuestras escrituras</li>
-                            <li>Adaptador para RabbitMQ</li>
-                            <li>Completar Docker para que pueda trabajar con colas</li>
+                            <li>Definición de eventos de dominio</li>
+                            <li>Introduciendo repositorios en memoria long-term</li>
+                            <li>Introducción a AMQP (RabbitMQ)</li>
+                            <li>Deployando la combinación server + consumer</li>
+                            <li>Introducción a los websockets</li>
                         </ul>
                     </div>
                 </div>
